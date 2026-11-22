@@ -1,0 +1,1387 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>程设考前抄书</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="14f2073e-5257-80d0-bccc-fd1dfd8d1778" class="page sans"><header><h1 class="page-title">程设考前抄书</h1><p class="page-description"></p></header><div class="page-body"><h3 id="aad9904f-c5d1-40cc-8834-b8f2ffb004b4" class=""></h3><p id="96b89652-bb23-4eaf-bf80-b4fe2bb8c511" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8055-b841-c6ef330d8c9c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="08c399fe-d946-4464-9f8f-9ac010582680" class="">冯诺依曼计算机结构体系：</p><figure id="1502073e-5257-8078-b152-e6abe7d549a8" class="image"><a href="sicp.png"><img style="width:646.3875122070312px" src="sicp.png"/></a></figure></div></figure><p id="16b2073e-5257-80f9-98fa-f8f9e634cd07" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16b2073e-5257-806b-bf1f-c6c7cd9a40b0"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="b656cf94-ecc0-4b75-ac88-a6defde12614" class="">进制转换：</p><ol type="1" id="16b2073e-5257-8064-afe1-c1d2b0e7549d" class="numbered-list" start="1"><li>二/八/十六进制转为十进制：<p id="16b2073e-5257-8046-8417-ef02caaddac9" class="">三个例子：</p></li></ol><p id="16b2073e-5257-80d6-b92c-d69af6a9b02f" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1011.1101</mn><msub><mo stretchy="false">)</mo><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>1</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mn>0</mn></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>0</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mn>1</mn><mo>×</mo><msup><mn>2</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup><mo>=</mo><mn>11.8125</mn></mrow><annotation encoding="application/x-tex">(1011.1101)_{2} = 1\times2^3 + 0\times2^2 + 1\times2^1 + 1\times2^0 + 1\times2^{-1} + 1\times2^{-2} + 0\times2^{-3} + 1\times2^{-4} = 11.8125</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1011.1101</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">4</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11.8125</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-800b-9118-d451234c2cf1" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>17.24</mn><msub><mo stretchy="false">)</mo><mn>8</mn></msub><mo>=</mo><mn>1</mn><mo>×</mo><msup><mn>8</mn><mn>1</mn></msup><mo>+</mo><mn>7</mn><mo>×</mo><msup><mn>8</mn><mn>0</mn></msup><mo>+</mo><mn>2</mn><mo>×</mo><msup><mn>8</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>4</mn><mo>×</mo><msup><mn>8</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>15.3125</mn></mrow><annotation encoding="application/x-tex">(17.24)_{8} = 1\times 8^1 + 7\times8^0 + 2\times8^{-1} + 4\times8^{-2} = 15.3125</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">17.24</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">8</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">7</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">8</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">8</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">8</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">15.3125</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-80c5-9894-c40bab4ce1d5" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>2</mn><mi>B</mi><mi mathvariant="normal">.</mi><mi>A</mi><mn>5</mn><msub><mo stretchy="false">)</mo><mn>16</mn></msub><mo>=</mo><mn>2</mn><mo>×</mo><mn>1</mn><msup><mn>6</mn><mn>1</mn></msup><mo>+</mo><mn>11</mn><mo>×</mo><mn>1</mn><msup><mn>6</mn><mn>0</mn></msup><mo>+</mo><mn>10</mn><mo>×</mo><mn>1</mn><msup><mn>6</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>5</mn><mo>×</mo><mn>1</mn><msup><mn>6</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>43.64453125</mn></mrow><annotation encoding="application/x-tex">(2B.A5)_{16} = 2 \times 16^1 + 11 \times 16^0 + 10 \times 16^{-1} + 5 \times 16^{-2} = 43.64453125</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">.</span><span class="mord mathnormal">A</span><span class="mord">5</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">16</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">11</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">10</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">6</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">43.64453125</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-80c2-bbe1-e2526fddd05b" class="">
+</p><ol type="1" id="16b2073e-5257-807e-8684-dfde859f7d47" class="numbered-list" start="2"><li>十进制转为二/八/十六进制：以<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25.625</mn></mrow><annotation encoding="application/x-tex">25.625</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">25.625</span></span></span></span></span><span>﻿</span></span>为例<p id="16b2073e-5257-8072-9b98-cec43cb13868" class="">对于转为二进制：<div class="indented"><p id="16b2073e-5257-802d-888a-f15cbbb47638" class="">整数部分：</p><p id="16b2073e-5257-80c7-8bec-c920b778a6bc" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>12</mn><mtext>余</mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">25 / 2 = 12 余 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">25/2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">12</span><span class="mord cjk_fallback">余</span><span class="mord">1</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-80a2-bc48-d6a16bc94ede" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>6</mn><mtext>余</mtext><mn>0</mn></mrow><annotation encoding="application/x-tex">12 / 2 = 6 余 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">12/2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">6</span><span class="mord cjk_fallback">余</span><span class="mord">0</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-8022-80f1-d08a6274134e" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>3</mn><mtext>余</mtext><mn>0</mn></mrow><annotation encoding="application/x-tex">6 / 2 = 3 余 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">6/2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">3</span><span class="mord cjk_fallback">余</span><span class="mord">0</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-809f-a1f8-cf0f518aa9eb" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>1</mn><mtext>余</mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">3 / 2 = 1 余 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3/2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">1</span><span class="mord cjk_fallback">余</span><span class="mord">1</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-806c-9cc6-fc28c0c2a5fc" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn><mo>=</mo><mn>0</mn><mtext>余</mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">1 / 2 = 0 余 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">0</span><span class="mord cjk_fallback">余</span><span class="mord">1</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-806d-8fdd-dc0e76df54e0" class="">∴整数部分二进制为<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11001</mn></mrow><annotation encoding="application/x-tex">11001</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11001</span></span></span></span></span><span>﻿</span></span><strong>（逆向读取）</strong></p><p id="16b2073e-5257-8025-984a-cc0d7439329d" class="">小数部分：</p><p id="16b2073e-5257-80f5-a35d-e72abaf6f53b" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.625</mn><mo>∗</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>+</mo><mn>0.25</mn></mrow><annotation encoding="application/x-tex">0.625 * 2 = 1 + 0.25</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.625</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.25</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-806c-9710-c36171cd2b0c" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.25</mn><mo>∗</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>+</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">0.25 * 2 = 0 + 0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.25</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-809c-868a-d091ee6ff35c" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mo>∗</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>+</mo><mn>0.0</mn></mrow><annotation encoding="application/x-tex">0.5 * 2 = 1 + 0.0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.0</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-80db-8f45-e9bc6ebccdbc" class="">所以小数部分二进制为<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>101</mn></mrow><annotation encoding="application/x-tex">101</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">101</span></span></span></span></span><span>﻿</span></span><strong>（正向读取）</strong></p></div></p><p id="16b2073e-5257-80ff-a045-f523318dd2e3" class="">对于八进制与十六进制同理，注意读取方向</p><p id="16b2073e-5257-8010-9dd5-d82b0010197d" class="">
+</p></li></ol><ol type="1" id="16b2073e-5257-80cc-94bd-e24568711eb5" class="numbered-list" start="3"><li>二进制转为八/十六进制<p id="16b2073e-5257-80bb-81b8-e35074670194" class="">对于转为八进制：</p><p id="16b2073e-5257-8009-a4b2-e490e3225fa3" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11010110.1011</mn></mrow><annotation encoding="application/x-tex">11010110.1011</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11010110.1011</span></span></span></span></span><span>﻿</span></span>拆分成整数部分与小数部分：</p><p id="16b2073e-5257-807d-8868-d3afa5dad5d7" class="">整数部分：<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>011</mn><mtext>  </mtext><mn>010</mn><mtext>  </mtext><mn>110</mn></mrow><annotation encoding="application/x-tex">011 \;010 \;110</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">011</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">010</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">110</span></span></span></span></span><span>﻿</span></span> （空位左侧补0）</p><p id="16b2073e-5257-8070-b328-fdb9484a5c68" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>011</mn><mo>→</mo><mn>3</mn><mtext>，</mtext><mn>010</mn><mo>→</mo><mn>2</mn><mtext>，</mtext><mn>110</mn><mo>→</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">011 → 3，010 → 2，110 → 6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">011</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">3</span><span class="mord cjk_fallback">，</span><span class="mord">010</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2</span><span class="mord cjk_fallback">，</span><span class="mord">110</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-803d-89ee-f7d28407d5f6" class="">∴整数部分为<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>326</mn><msub><mo stretchy="false">)</mo><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">(326)_{8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">326</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-80bb-a6ff-e0dc1047fd8e" class="">小数部分：<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>101</mn><mtext>  </mtext><mn>100</mn></mrow><annotation encoding="application/x-tex">101 \;100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">101</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">100</span></span></span></span></span><span>﻿</span></span> （空位右侧补0）</p><p id="16b2073e-5257-8099-b0ce-fa3d2bb74975" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>101</mn><mo>→</mo><mn>5</mn><mtext>，</mtext><mn>100</mn><mo>→</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">101 → 5，100 → 4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">101</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord cjk_fallback">，</span><span class="mord">100</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-8027-9e17-c595d3ef641e" class="">∴小数部分为<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>54</mn><msub><mo stretchy="false">)</mo><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">(54)_{8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">54</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="16b2073e-5257-802a-8f1f-d1d1909807ec" class="">∴ 二进制数 <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11010110.1011</mn></mrow><annotation encoding="application/x-tex">11010110.1011</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11010110.1011</span></span></span></span></span><span>﻿</span></span> 转换为八进制是 <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>326.54</mn><msub><mo stretchy="false">)</mo><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">(326.54)_{8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">326.54</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span><br/><br/>对于转为十六进制同理，每四位进行一次运算并组合</p></li></ol></div></figure><p id="1502073e-5257-804d-8e8b-ce47afb284cb" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80c5-8ecd-d4a97f3b22a1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="5fc35deb-dd4c-4023-9272-f206fb4bc344" class="">标识符命名规范</p><p id="1502073e-5257-80ee-98a3-f2d157e05bf5" class="">①只能含有字母（区分大小写）、数字、下划线，且只能以字母、下划线开头；</p><p id="1502073e-5257-80e2-916b-d12bf5c8c62f" class="">②常用小写字符+下划线/各单词首字母大写（有时候第一个首字母不大写）命名标识符，如my_value 或myValue；</p><p id="1502073e-5257-8013-902e-d7eb311fef44" class="">③不能使用关键字命名标识符，某些库文件定义的标识符不能重复命名，不建议以下划线+大写字母的方式命名；</p><p id="1502073e-5257-803e-872d-f107d3bafe07" class="">④宏命名所有字符全部大写（规范）</p></div></figure><p id="1502073e-5257-800a-985d-f29feee157c4" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8006-8c0c-d183f0d28199"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1502073e-5257-8091-961e-cdb6c5c4a72a" class="">c/c++中，小数常量默认为<mark class="highlight-teal">double</mark>类型</p><p id="1502073e-5257-80ee-9305-e080dc57f6dc" class="">把一个包含小数点的常量赋值给float型变量时，建议在数字后面加一个f/F</p><p id="1502073e-5257-8020-8ecc-d05dbe97cd88" class=""><mark class="highlight-teal"><code>profit = 2150.48</code></mark><mark class="highlight-red"><code>f</code></mark></p><p id="1502073e-5257-80e7-b798-d832381762ad" class="">来明确指定2150.48为float数</p><p id="1502073e-5257-8083-9488-c2ae538362b4" class="">把一个包含小数点的常量赋值给long double型变量时，建议在数字后面加一个l/L</p><p id="1502073e-5257-804a-b373-df8e3def846f" class=""><mark class="highlight-teal"><code>profit = 2150.48</code></mark><mark class="highlight-red"><code>l</code></mark></p><p id="1502073e-5257-8075-bfd8-f6060f717f48" class="">来明确指定2150.48为long double数</p><p id="1642073e-5257-809b-a1e8-f43af35be4dd" class="">（l后缀也用来表示long int，取决于具体情况）</p><p id="1502073e-5257-807d-a7a6-caa4832b0657" class="">（另外，字母u和l分别表示unsigned和long）</p></div></figure><p id="1502073e-5257-80b3-8e42-c0fb8221c3f5" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8053-afe7-dc4b58c14ff1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="e33c55b1-5a33-495c-b987-947b02fab087" class="">c/c++的注释不能嵌套（针对于/**/）</p><p id="47223e70-97c6-4eb0-81dd-5866acd6f5ec" class="">举几个例子：</p><p id="1502073e-5257-8056-ae83-dc4987a12dc4" class=""><code>/* abc /* def */ ghi */</code> 是错误的；</p><p id="1502073e-5257-804d-b265-f79531cb2fdd" class=""><mark class="highlight-yellow"><code>/* abc /* def */</code></mark><em><mark class="highlight-yellow"> </mark></em>是可行的，第二个<mark class="highlight-yellow"><code>/*</code></mark><mark class="highlight-yellow"> </mark>被当作普通文本；</p><p id="1502073e-5257-80fd-93d7-eef377d09cc0" class=""><mark class="highlight-yellow"><code>/* abc // def // ghi */</code></mark> 是可行的，<mark class="highlight-yellow"><code>//</code></mark>注释被当作普通文本；</p><p id="1502073e-5257-8095-b5af-d9b69fc66bcd" class=""><mark class="highlight-yellow"><code>// abc /* def // ghi */</code></mark><mark class="highlight-yellow"> </mark>也能跑，唯一起到注释作用的只有最前面的<mark class="highlight-yellow"><code>//</code></mark>；</p></div></figure><p id="1502073e-5257-80dd-b4f6-c96ea20567c3" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-803a-ac2c-c756331fe437"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="8b91de04-c2cc-4ac1-995b-300f7ed3baaf" class="">转换说明的大体格式为%m.pX<em><mark class="highlight-gray">(%-m.pX)</mark></em></p><p id="1502073e-5257-8042-a54d-eb4363c23296" class=""><mark class="highlight-teal">X</mark>是转换说明符（字母）</p><p id="1502073e-5257-8019-89e8-fc1daf99de7a" class="">比如 <mark class="highlight-yellow">d </mark>表示十进制整数， <mark class="highlight-yellow">i </mark>表示整数（scanf时不指定进制）， <mark class="highlight-yellow">f </mark>表示十进制浮点数；在X前加 <mark class="highlight-yellow">l </mark>表示long，加 <mark class="highlight-yellow">ll </mark>表示long long</p><p id="1502073e-5257-802b-927d-fac5fcd8aaa2" class=""><mark class="highlight-teal">p</mark>表示精度（数字）</p><p id="1502073e-5257-804f-9bc7-c6fc45710dc3" class="">对于转换说明符<mark class="highlight-yellow">d</mark>，<mark class="highlight-teal">p</mark>表示最小显示数字（至少会打印出<mark class="highlight-teal">p</mark>个数字），若不足在数前补0（<mark class="highlight-teal">p</mark>默认为1）；</p><p id="1502073e-5257-80d0-af2a-e162221ac481" class="">对于转换说明符<mark class="highlight-yellow">f</mark>，表示打印出小数点后<mark class="highlight-teal">p</mark>位（<mark class="highlight-teal">p</mark>=0则不显示小数点）（<mark class="highlight-teal">p</mark>默认为6），</p><p id="1502073e-5257-8093-be98-d03f233911b5" class=""><mark class="highlight-teal">m</mark>表示最小字符宽度，表示“打印时最小需要占据几个字符的宽度”，如果要显示的字符少于<mark class="highlight-teal">m</mark>，会在值的左侧补足空格（右对齐）；在<mark class="highlight-teal">m</mark>的前面加<mark class="highlight-orange"><mark class="highlight-teal_background">-</mark></mark>号会导致左对齐</p><p id="1502073e-5257-80f7-bcc5-e6d1dc0eda48" class="">一个例子：对于123.45，通过%10.3f转换后显示为：</p><p id="1502073e-5257-8079-aa72-ffea749c0a2f" class=""><mark class="highlight-orange"><code>   123.450</code></mark></p><p id="1502073e-5257-8002-b6a2-f29df2e2674a" class="">三个空格，保留小数点后三位，总共占据了10个字符宽度（注意小数点也占一个宽度）</p></div></figure><p id="1502073e-5257-80d4-b58c-f103c3265aa5" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80bd-9a2f-f7c6d1a41484"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="31945733-ee2e-4961-a034-4d4ab5cd6663" class="">printf显示某些特定字符：</p><p id="1502073e-5257-8006-96f7-fb6c3ea7be11" class=""><mark class="highlight-teal"><code>\\</code></mark> 显示反斜杠符 \</p><p id="1502073e-5257-80f9-a1f1-f56290fb57de" class=""><mark class="highlight-teal"><code>\&quot;</code></mark> 显示双引号 “ （单引号同理）</p><p id="1502073e-5257-805d-9d72-ea18da08ea18" class=""><mark class="highlight-teal"><code>%%</code></mark> 显示百分号 %（不是<code>\%</code>）</p><p id="3822c161-d2c2-4894-a525-4d78b11d611e" class=""><mark class="highlight-teal"><code>\?</code></mark><mark class="highlight-yellow"> </mark>显示问号 ?</p><p id="1642073e-5257-8047-a3e0-d671e339c125" class="">（关于为什么会有\?这种用法，见“三字符组”）</p><figure id="1642073e-5257-807f-88e0-c8c9adc86cb0" class="link-to-page"><a href="https://www.notion.so/1642073e5257807f88e0c8c9adc86cb0?pvs=21">三字符组</a></figure><p id="545c54bf-a9fe-4d7f-aa53-1d90f41828a3" class=""><mark class="highlight-gray">（但是三字符组太罕见了，Visual C++ 2010直接默认不支持，g++也会给出警告，所以不要用）</mark></p><p id="1642073e-5257-8040-bd31-ff875eef2a2a" class="">
+</p><p id="52b4f92e-5521-4af6-bae4-0767087eddee" class="">八/十六进制转义序列也是一种不常用的转义序列</p><p id="9011f1ef-53ad-4401-8d85-0e9b72db507d" class="">八进制转义序列格式是\+八进制数字（最大值通常是八进制的377）</p><p id="5f2515dd-21ce-4fda-b107-6b886f597dbb" class="">十六进制转义序列格式是\x+十六进制数字（表示成无符号字符，所以值不超过FF）</p><p id="1642073e-5257-80ef-963c-d7f5705f3590" class="">使用例：</p><figure id="1642073e-5257-8095-b0ab-e1755c98f88b" class="image"><a href="%25E5%25B1%258F%25E5%25B9%2595%25E6%2588%25AA%25E5%259B%25BE_2024-12-22_144324.png"><img style="width:499.375px" src="%25E5%25B1%258F%25E5%25B9%2595%25E6%2588%25AA%25E5%259B%25BE_2024-12-22_144324.png"/></a></figure><p id="1642073e-5257-8064-9705-fbef093486a4" class="">当需要在字符串中嵌入非打印字符（如控制字符）时，使用八进制或十六进制转义序列可以方便地表示这些字符。</p><p id="e807cba5-f926-4a3e-b4d1-4d45f08cb047" class="">
+</p></div></figure><p id="38463b2c-26f2-4367-a385-707305e380ec" class="">
+</p><p id="1d926604-6ca2-4186-868e-1198cfe53864" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-808a-a108-f95307288b4d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="84bf76ec-bc41-49c5-87d4-09546fa1a191" class="">运算符/和运算符%用于负操作数（整数）时，结果是难以确定的（C99之前）</p><p id="1502073e-5257-804f-96e8-cda18523b5a7" class="">C99及之后，对于涉及负数的整除/求余运算，有：</p><ol type="1" id="1502073e-5257-80bd-9986-fc366db2857e" class="numbered-list" start="1"><li>商必须向0截断（砍掉小数部分）</li></ol><ol type="1" id="1502073e-5257-80b4-be09-f6277af968ac" class="numbered-list" start="2"><li>求余时，余数的符号与被除数相同</li></ol><ol type="1" id="1502073e-5257-8059-9794-c57f3ded0935" class="numbered-list" start="3"><li>必有<mark class="highlight-brown"><code>(a/b)*b + a%b == a</code></mark><mark class="highlight-brown"> </mark>（这一点对于C99之前也成立）</li></ol><p id="1502073e-5257-8034-b879-c94584a9f88b" class="">比如：<div class="indented"><p id="1502073e-5257-80e6-8e53-d1806e73028f" class=""><mark class="highlight-brown"><code>-9 / -7 = 1</code></mark></p><p id="1502073e-5257-80e5-b5c9-d63dfc749da9" class=""><mark class="highlight-brown"><code>-9 % -7 = -2</code></mark></p></div></p><p id="1502073e-5257-8038-a226-e2fb580e45d6" class="">omg我也讲不出来这玩意总结还是避免这种运算(¬_¬&quot;)</p></div></figure><p id="1502073e-5257-808c-9447-cd2ae4c7cb90" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8045-8f70-e95feb4de2ad"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1502073e-5257-802e-80ea-cbda8a5af95a" class="">左值出现在赋值操作的左侧；右值<em>多</em>出现在赋值操作的右侧</p><p id="1612073e-5257-80e5-a8f9-d4921c8a0376" class="">右值的主要含义是表示<strong>临时对象</strong>或者<strong>无法直接获取其内存地址的表达式</strong>，右值<strong>通常不可被修改</strong>（可以通过右值引用延长其生命周期，之后再说）</p><p id="1502073e-5257-80af-b738-fba7e52ef556" class="">表达式是由操作数和运算符组成的序列，它会产生一个值</p><p id="76ec6b84-1a61-462e-a067-d9b8ed068ca7" class=""><strong>所有右值都是表达式，但不是所有表达式都是右值</strong></p></div></figure><p id="1502073e-5257-80c0-912e-f46d075385a8" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8060-8887-e1013d801eb6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="31bfa2f8-db8d-4e2f-bce5-1296ca3157e1" class="">赋值运算符要求左操作数必须是左值</p><p id="1502073e-5257-8092-a54d-c305c9fd4bb9" class="">
+</p><p id="1502073e-5257-8098-be6e-f1f73c514c74" class="">判断左值的简单方法：能对它取地址的通常是左值（左值有明确的内存位置）</p><p id="1502073e-5257-8032-870c-ddb8c713cc40" class="">提醒：<strong>a++是右值</strong>，++a既可以是左值，也可以是右值</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-8069-b375-ca196c25a644" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Example #1
+int a = 0;
+int x = ++a;    // ++a是右值，x现在为1，a现在为1
+++(++(++a))     // ++a是左值，左值可以继续被++操作，a现在为4
+
+// Example #2
+int a = 0, b = 0;
+a = b++;        // 正确：b++是右值，可以出现在=右边
+a++ = b;        // 错误：a++是右值，不能出现在=左边
+a = ++b;        // 正确：++b是右值，可以出现在=右边
+++a = b;        // 正确：++a是左值，可以出现在=左边</code></pre></div></figure><p id="1502073e-5257-8056-b2e4-c5ab0f75b9cd" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8039-82ad-df1cdc4897f2"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1502073e-5257-80f2-964f-d38cd3e8ec0f" class="">关于a++：</p><ol type="1" id="1502073e-5257-80f8-8c30-efdc3a751833" class="numbered-list" start="1"><li>为什么a++是右值？</li></ol><ul id="1502073e-5257-803a-8790-f1b489107554" class="bulleted-list"><li style="list-style-type:disc">它返回的是 a 增加前的临时值副本（这个副本在所在的语句结束后就被销毁）</li></ul><ul id="1502073e-5257-80df-a7d0-d5ec1bf7a614" class="bulleted-list"><li style="list-style-type:disc">而临时值没有固定的内存位置（通常在栈上，地址无法直接访问）</li></ul><p id="1612073e-5257-8079-ab82-c31668d2aa66" class="">
+</p><ol type="1" id="1502073e-5257-802a-923f-f130c6fc97cb" class="numbered-list" start="2"><li>在同一个表达式中多次使用a++是未定义行为（自增的时机不明确）<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-8044-b0ab-d84ab1e5bee0" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">	int a = 1;
+	int b = a++ + ++a + a++; // ???
+	printf(&quot;%d %d\n&quot;,a,b);
+	return 0;</code></pre><p id="1502073e-5257-80e5-b5ae-c1cd7a381cfb" class="">对于gcc编译器，输出结果是<mark class="highlight-brown"><code>4 7</code></mark>，并不清楚其他编译器会如何输出┑(￣Д ￣)┍</p></li></ol></div></figure><p id="1502073e-5257-806e-953a-ccf405b0d939" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80d7-baab-e81711590046"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="053fd72a-c34e-4d1a-9ddf-f65e17dbc9af" class="">赋值号“=”也是运算符</p><p id="1502073e-5257-807b-8952-cb4176dadf5d" class="">所以当进行<mark class="highlight-brown"><code>a = b</code></mark>的操作时，不仅把1赋值给了变量a，本身也会输出一个值b</p><p id="1502073e-5257-8057-99a4-f5ca7a625ea2" class="">比如<mark class="highlight-brown"><code>while(a--){ ... }</code></mark>等价为<mark class="highlight-yellow"><mark class="highlight-default_background"><code>while(a != 0) { ... ; a -= 1;}</code></mark></mark></p><p id="1502073e-5257-8061-b559-d39e4b6c4c61" class="">
+</p></div></figure><p id="1502073e-5257-8083-9579-dfa2fab30ec1" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-806b-970d-d3349826e6df"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="bac53bc6-071e-44a0-a75c-0c0c15004230" class="">&amp;&amp;和||都具有短路特性</p><p id="1642073e-5257-8089-8bbf-df7e5799c5ed" class="">对于<mark class="highlight-yellow"><code>A&amp;&amp;B</code></mark>，如果A不成立，B就不会进行判断（B里面包含的赋值/运算等也不会进行）</p><p id="1642073e-5257-80aa-b85e-d21501526fd7" class="">对于<mark class="highlight-yellow"><code>A||B</code></mark>，如果A成立，B就不会进行判断（B里面包含的赋值/运算等也不会进行）</p><p id="1642073e-5257-8071-8790-c7b7a725aa3e" class="">下面是一个用例：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-8054-a61f-f8bcdd103150" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#include &lt;stdio.h&gt;
+
+int main() {
+    int score;
+    printf(&quot;Tell me your score: &quot;);
+    scanf(&quot;%d&quot;, &amp;score);
+    
+    // 利用短路特性逐个判断分数区间
+    (score &lt; 0 || score &gt; 100) &amp;&amp; printf(&quot;INVALID! \n&quot;) ||
+    (score &gt;= 90) &amp;&amp; printf(&quot;Perfect! \n&quot;) ||
+    (score &gt;= 60) &amp;&amp; printf(&quot;Passed:) \n&quot;) ||
+    (score &lt; 60) &amp;&amp; printf(&quot;Failed:( \n&quot;);
+    
+    return 0;
+}
+</code></pre><p id="1502073e-5257-8088-8c3d-e69c6b91fc78" class="">没有if，全是短路</p></div></figure><p id="1502073e-5257-80f6-855e-e50284ebfd94" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8060-82f8-df5a14231485"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="115cc94f-925d-4dea-bbb7-347cf8d972c2" class="">else和在其上方最近的尚未配对的if进行配对，与缩进无关（c语言没有缩进规范）</p></div></figure><p id="1502073e-5257-808f-bcf0-fdba9e8e3e7d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80cc-8b7e-ef0bd0025fec"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="912f49f1-7559-414d-898f-dc44299171f9" class="">switch语句中，每个case后可以跟多条语句，也就是<mark class="highlight-default_background">不需要大括号{}</mark></p><p id="1612073e-5257-80aa-9445-e9dd7efcaf59" class="">但是，如果在case中声明局部变量，必须要用大括号括住整个case的代码，限定该局部变量的<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">作用域</a>（否则case1理论上可以访问case2的局部变量，这很不合理，编译不通过）</p><p id="1612073e-5257-8024-af30-c1fcd771c2cd" class="">
+</p><p id="1612073e-5257-8092-aa48-e230ffa894ae" class="">另外，每个case结尾必须加break，否则switch语句会继续执行下一个case的内容，直到遇到break;或switch语句结束</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1612073e-5257-8037-839a-ed4786f65c53" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">switch(value)
+{
+	case 1:
+	{
+		int rand = random(1,3);
+		a.score += rand;
+		break;
+	}
+	
+	case 2: case 3:
+	printf(&quot;...&quot;);
+	break;
+	
+	default: return 1;
+}</code></pre><p id="1612073e-5257-80ab-b859-f886180ae87b" class="">
+</p></div></figure><p id="1502073e-5257-806e-8b63-c345d90231cd" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8025-8f46-f0890e6b43f0"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="6a5d662f-40f9-4425-8696-9791108c6efa" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>63</mn></msup><mo>−</mo><mn>1</mn><mo>&lt;</mo><mn>1</mn><msup><mn>0</mn><mn>19</mn></msup><mo>&lt;</mo><msup><mn>2</mn><mn>64</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{63}-1 &lt; 10^{19} &lt; 2^{64}-1 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">63</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8532em;vertical-align:-0.0391em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">64</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span><span>﻿</span></span></p><p id="1502073e-5257-808d-9910-f1999728c62c" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>9</mn></msup><mo>&lt;</mo><msup><mn>2</mn><mn>31</mn></msup><mo>−</mo><mn>1</mn><mo>&lt;</mo><msup><mn>2</mn><mn>32</mn></msup><mo>−</mo><mn>1</mn><mo>&lt;</mo><mn>1</mn><msup><mn>0</mn><mn>10</mn></msup></mrow><annotation encoding="application/x-tex">10^{9} &lt; 2^{31}-1 &lt; 2^{32}-1 &lt; 10^{10}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8532em;vertical-align:-0.0391em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">31</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">32</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="1502073e-5257-8045-b96e-c0faa873cdb1" class="">long long int 最大不超过<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>19</mn></msup></mrow><annotation encoding="application/x-tex">10^{19}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（很接近），unsigned 也刚刚超过<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>19</mn></msup></mrow><annotation encoding="application/x-tex">10^{19}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="1502073e-5257-80d9-a089-e9f78f0450ee" class="">int  和对应的 unsigned 都没有超过<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>10</mn></msup></mrow><annotation encoding="application/x-tex">10^{10}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（非16位机器）</p><p id="1502073e-5257-802e-8381-d0782726612c" class="">以上数据可以帮助自己判断是否使用long long / 使用高精度</p><p id="1612073e-5257-80b9-a949-e7df3ac2dc78" class="">注意<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>19</mn></msup></mrow><annotation encoding="application/x-tex">10^{19}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">19</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>会卡<em><strong>unsigned</strong></em> long long</p></div></figure><p id="1502073e-5257-809e-80a6-e081acd8b4ca" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80d1-b62d-d94ec0c7fc8e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="b7659625-593a-4c8e-bb1e-bcfd739b1ee9" class="">getchar和putchar函数分别用来读/写单个字符</p><p id="1502073e-5257-8034-98d3-cdb8b7d0f368" class="">putchar用来写单个字符：<mark class="highlight-orange"><code>putchar(ch);</code></mark></p><p id="1502073e-5257-8044-b1dd-c2a0ed7f798c" class="">getchar用来读取单个字符，并<strong>以int类型的值</strong>返回这个字符：</p><p id="1502073e-5257-804a-954e-c69475c10dff" class=""><mark class="highlight-teal"><code>int ch = getchar();</code></mark><mark class="highlight-teal"> </mark>是正确的</p><p id="1502073e-5257-80e6-b1dd-e660b6cf7623" class=""><mark class="highlight-red"><code>char ch = getchar();</code></mark><mark class="highlight-red"> </mark>是不合适的（虽然不会报错）</p><p id="1502073e-5257-8053-9353-e930af37b68b" class="">getchar的返回值需要能够表示所有可能的字符，以及EOF特殊值（通常表示为-1），而char类型不足以全部表示，于是使用int型返回值</p><p id="1502073e-5257-8044-8fe1-eecc1c00a67f" class="">如果使用<mark class="highlight-red"><code>char ch = getchar();</code></mark><mark class="highlight-red"> </mark>，这实际上发生了一次int → char的隐式类型转换，但是由于char的位数比int小，导致EOF无法被检测（高位截断导致-1的负号丢失），因此<code>ch == EOF</code>永不成立</p></div></figure><p id="1502073e-5257-80fb-9353-c920632462cd" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80ab-bb95-df5609be7faf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1502073e-5257-80dc-aca6-d93ec28183d7" class="">scanf会将不符合读入要求的值<strong>放回缓冲区</strong>而不是销毁，因此会有：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-80cf-b7c4-c9c1611216f1" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int num;
+char ch;
+scanf(&quot;%d&quot;, &amp;num);
+scanf(&quot;%c&quot;, &amp;ch); </code></pre><p id="1502073e-5257-80ae-9303-ead0d6fa8006" class="">我的输入是：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-80b8-9a82-ff0e10a48029" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">123
+a</code></pre><p id="1502073e-5257-80d9-b5b0-fad49ffefa75" class="">结果实际上我完成的操作是：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-800f-b613-dcae76fb6011" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">num = 123;
+ch = &#x27;\n&#x27;;    // 换行符
+// (a 并没有存储到任何一个变量中，还在缓冲区内，可以被读取)</code></pre><p id="1502073e-5257-80fa-8747-fdd8e449e206" class="">原因是第一个scanf在读取到\n时将其放回到了缓冲区，导致第二个scanf优先读取了回车符，而不是a，此时就应该在第一次scanf读取后清空缓存区</p><p id="1522073e-5257-80c2-afd4-f27c9d1172f3" class="">有以下解决方法：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-8051-8d24-d7e9ee7569df" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Method #1 
+scanf(&quot;%d&quot;, &amp;num);
+scanf(&quot; %c&quot;, &amp;ch);    // 用空格跳过（消费掉）空白字符（包括换行符，制表符）
+// 空白字符此时不在缓冲区中
+
+// Method #2
+scanf(&quot;%d&quot;, &amp;num);
+getchar();            // getchar()读取了缓冲区中的换行符
+scanf(&quot;%c&quot;, &amp;ch);</code></pre><p id="1502073e-5257-8066-8142-ca43de6befb6" class="">
+</p></div></figure><p id="1522073e-5257-80c8-b211-dea52289a769" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-8090-a174-c96e0f1d96f0"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="e062bf79-431f-400b-8a88-656b030d851f" class="">对于getchar代替scanf的操作有一些惯用操作：</p><p id="1522073e-5257-8004-aa60-c1037028da24" class=""><mark class="highlight-teal"><code>while (getchar() != &#x27;\n&#x27;);</code></mark><mark class="highlight-teal"> </mark><strong>表示清空缓冲区</strong>（如果使用得当，缓冲区内应该只会有一个\n，这个\n是可以被清除的，因为它已经被读取了，是不会放回的）</p><p id="1522073e-5257-8008-9433-eb96d2e06a10" class="">（其实更直接的方式是使用 <mark class="highlight-teal"><code>fflush(stdin)</code></mark>，强制刷新输入缓冲区，但是这样写移植性差）</p><p id="1522073e-5257-80ae-a2bb-d1f2570f2f2f" class=""><mark class="highlight-teal"><code>while ((ch = getchar()) == &#x27; &#x27;);</code></mark><mark class="highlight-teal"> </mark><mark class="highlight-default"><strong>表示清空连续出现的空格</strong></mark><mark class="highlight-default">（不会清空\t \n），即在读取时跳过空格</mark></p><p id="1642073e-5257-8071-a26f-ce641efbbd29" class=""><strong>（</strong><mark class="highlight-yellow"><code><strong>ch = getchar()</strong></code></mark><strong>两侧的括号是必要的，因为</strong><mark class="highlight-yellow"><code><strong>==</strong></code></mark><strong>比</strong><mark class="highlight-yellow"><code><strong>=</strong></code></mark><strong>优先级高）</strong></p><p id="1522073e-5257-80d3-b093-c43bb5526596" class="">（以上两个都常用在两次scanf中间）</p><p id="1522073e-5257-80f4-8f03-f6ed84038d25" class=""><mark class="highlight-teal"><code>while((ch = getchar()) != EOF)</code></mark><mark class="highlight-teal"> </mark><strong>用于逐个读入字符</strong>，直到文件结束（出现EOF）</p><p id="1522073e-5257-803e-b1b8-e0af0ddd6bd6" class="">举个例子：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-80e8-a99e-e5b9a0b76b08" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int ch;
+while((ch = getchar()) != EOF)	{putchar(ch);}
+// 花括号里可以塞其他的语句，比如每次getchar()都存入数组
+// EOF也可以换成&#x27;\n&#x27;，这样用法上就和scanf更像了（换行则结束一次读入）
+// 拓展性是很强的</code></pre><p id="1522073e-5257-8086-9a43-da72d093f9df" class="">功能如下图所示：</p><figure id="1522073e-5257-8058-9eb7-de2d2d13d3c0" class="image"><a href="image.png"><img style="width:480px" src="image.png"/></a></figure><p id="1522073e-5257-80e6-8c36-f1c8b621d972" class="">每次输入一串字符串并按回车<strong>（这是缓冲区刷新的标志之一）</strong>，程序就会读入并重新写出该行的文字至新行（因为读入了\n并写出，所以会自动换行），程序不会终止，直到手动在新行输入ctrl+Z表示输入EOF，程序才会结束</p></div></figure><p id="1502073e-5257-8004-98cd-f51dd1fa428d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-8039-8ea5-c1bd807da871"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="38e65865-d905-4dd4-8c33-5d8bede916e5" class="">为什么每次读入函数时都要敲一次回车键才会对缓冲区的内容进行读取操作？</p><ul id="1502073e-5257-8005-8dec-f2462bc2c70d" class="bulleted-list"><li style="list-style-type:disc">标准输入stdin是行缓冲模式，</li></ul><ul id="1502073e-5257-805f-b2de-e70fede89038" class="bulleted-list"><li style="list-style-type:disc">只有当缓冲区被刷新(flush)时，数据才会真正被处理</li></ul><p id="1502073e-5257-807a-b1be-fc99a900ba99" class="">缓冲区刷新的时机：<div class="indented"><ul id="1502073e-5257-8020-b2a2-d8eb5393303b" class="bulleted-list"><li style="list-style-type:disc">遇到换行符 <code>\n</code>（最常用的）</li></ul><ul id="1502073e-5257-80c1-a05e-c1acc9d0c832" class="bulleted-list"><li style="list-style-type:disc">缓冲区满了</li></ul><ul id="1502073e-5257-803c-9350-d7e424991383" class="bulleted-list"><li style="list-style-type:disc">程序结束了</li></ul><ul id="1502073e-5257-80b6-a7f9-fd4e896c1fb8" class="bulleted-list"><li style="list-style-type:disc">手动调用 <code>fflush()</code>（可能有“未定义”的风险）</li></ul></div></p><p id="1502073e-5257-80b4-be31-cb56ee004569" class="">
+</p></div></figure><p id="1502073e-5257-8052-a7db-cc923c2349e2" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80ac-921a-d0f63c5a83e0"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="3ee27b6c-0021-4bd8-a712-c203b40b3aef" class="">如果想做到“即读即处理”，而不是进行行缓冲，在Windows系统上可以使用_getch()替代getchar()，这需要引入Windows特有的&lt;conio.h&gt;；在Linux系统上有&lt;termios.h&gt;库，使用略</p><p id="1502073e-5257-8051-b179-c8b9b50bed60" class="">注意：_getch()函数的输入不会出现在屏幕上，如果想显示输入的值，需要搭配putchar()</p><p id="1502073e-5257-8002-9bb5-cea6bca912ea" class="">这里有一个有趣的举例，展示_getch()函数的特殊性：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-801f-a1b9-d393debffcf3" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int main()
+{
+	char ch;
+	while((ch = _getch()) != EOF) {putchar(ch);}
+}</code></pre><p id="1502073e-5257-8091-8bb9-e57e04cf2846" class="">真正的即读即处理（这里是打印），在实际输入操作中会发现</p><ol type="1" id="1502073e-5257-805d-a08a-f4896f0a99c8" class="numbered-list" start="1"><li>按backspace键只会后移光标而不删除任何字符；</li></ol><ol type="1" id="1502073e-5257-80f4-a07f-f778e8fb7b2a" class="numbered-list" start="2"><li>在后移光标后输入的字符会覆盖原位置的字符；</li></ol><ol type="1" id="1502073e-5257-8047-8193-e639891b5819" class="numbered-list" start="3"><li>按下enter键后，光标回到了当前行的首位，而不是下一行的首位</li></ol><p id="1502073e-5257-80ec-9b4d-ca46aae637c4" class="">这是为什么？</p><p id="1502073e-5257-8029-8b0c-d489b83ab4ee" class="">因为getchar()和_getch()的机制完全不同：</p><ol type="1" id="1502073e-5257-80f7-a20b-d07b39c2ba45" class="numbered-list" start="1"><li>backspace键的ASCII码是8，对应退格字符，就是对应“将光标后移一格”这一操作；</li></ol><ol type="1" id="1502073e-5257-80e8-bbf8-da5b2585cb55" class="numbered-list" start="2"><li>终端的输出默认就是覆盖模式，所以后移光标后输入会覆盖之前输入的值；</li></ol><ol type="1" id="1502073e-5257-8099-aceb-feab01a5da5e" class="numbered-list" start="3"><li>而enter键对应的ASCII编码是13（而不是10），对应的是回车符\r而不是换行符\n，回车符的作用就是使光标回到当前行的行首；</li></ol><ol type="1" id="1502073e-5257-80ee-ab5f-f28e398f1ed0" class="numbered-list" start="4"><li>然而大多数的情况下（包括getchar()）输入都存储在缓冲区中，系统会自动处理特殊字符（就像在记事本上写东西），比如backspace键会自动删除上一个字符，enter键会自动对应\r\n这一操作，但是_getch()的读入情况下就不会有这些“贴心的操作”了，毕竟_getch()只是粗暴地读入每一个输入的ASCII编码╮(╯▽╰)╭</li></ol><p id="1502073e-5257-807f-8cde-f8bb3ecc764e" class="">
+</p></div></figure><p id="1502073e-5257-80f5-b659-c8d3bddbf8a0" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-803e-b004-e2a81df38e39"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="680ca7a1-460a-4e73-a40b-9057501ed16a" class="">尽量使代码中所有的类型转换都是强制类型转换，【<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">隐性转换太凶险了</a>】</p><p id="1502073e-5257-8082-b880-c423dc1acb45" class="">强制类型转换包括但不限于以下运用</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1502073e-5257-807d-b390-f7cd76aa5d01" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">
+// Example #1
+int x = 9;
+float a1 = x / 7;           // a1 is 1.000000... now
+float a2 = (float)x / 7;    // a2 is 1.285714... now
+// 避免整数除法丢精度
+
+// Example #2
+int y = 1000000;
+long b1 = y * y;            // b1 is -727379968 now
+long b2 = (long)(y * y);    // b2 is -727379968 now
+long b3 = (long)y * y;      // b3 is 1000000000000 now
+// 避免溢出，注意到b2行的类型转换已经晚了
+
+// Example #3
+*matrix = (int *)malloc((*rows) * (*cols) * sizeof(int));
+...
+free(memory);               // 养成好习惯
+// 动态分配内存，并且matrix存储int值
+
+// Example #4
+(void) printf (&quot;Hello World!\n&quot;);
+// 明确告诉所有人（Visual Studio?）我刻意抛弃了返回值13
+
+... ...</code></pre></div></figure><p id="1502073e-5257-80f3-96a0-e9c3905ee76f" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1502073e-5257-80b7-a3d4-d22e7e2f5d7a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="d6211929-b73f-43d6-92c8-77ea9f620ceb" class="">还是转换说明符：</p><p id="a4fbd5b0-50a0-41d5-ac21-a3d92fb72808" class="">%u表示十进制；%o表示八进制；%x<em><mark class="highlight-gray">(%X)</mark></em>表示十六进制；没有二进制的转换说明符</p><p id="1642073e-5257-8091-8dc4-e8267743d6bb" class="">（%x在输出时十以上的字母小写，而%X是大写）</p><p id="aa3411aa-54df-45ae-8a59-3516bad95f06" class="">%d与%i在printf中没有区别；在scanf中，%d只能匹配十进制数，而%i可以匹配十进制，八进制和十六进制的数（通过观察前缀：无、0或0x判断进制）</p><p id="8321773c-4eb9-4c89-b005-dcf0ec08473e" class="">%c匹配<mark class="highlight-yellow"><strong>‘</strong></mark>单个字符<mark class="highlight-yellow"><strong>’</strong></mark>；%s匹配<mark class="highlight-yellow"><strong>”</strong></mark>字符串<mark class="highlight-yellow"><strong>”</strong></mark><mark class="highlight-default">（也就是char和char*）</mark></p><p id="519c7407-b423-4c55-8187-b53960b38c34" class="">%f表示浮点数</p><p id="74ed79e4-fe52-4f53-970d-cec868e169ff" class="">对于scanf输入，%f表示float，%lf表示double，不能混用；</p><p id="a1c06724-d366-4507-837b-03c78f55f3c2" class="">而对于printf输出，使用%f和%lf没什么区别（都会当作double处理）</p><p id="38f58b90-f1f4-456d-b4cc-1f1b7af6b28d" class="">（C99前只能使用%f输出，C99及之后允许有<mark class="highlight-gray">无意义的</mark>l）</p><p id="03975a43-40b0-47ed-bb36-f9e7e74b58cd" class="">%a、%e和%g也都是表示浮点数的</p><p id="a57fdbe2-85c7-43e5-9135-4f0aa21cff02" class="">%a会以十六进制输出浮点数（怪哦？）</p><p id="82d33ca9-a57e-40d7-a9ef-b440702722cb" class="">%e以科学计数法的形式输出浮点数（100000f 显示为 1.000000e+005）</p><p id="fccb5a13-0d81-4497-8e1a-6af1bace037a" class="">而%g会在浮点数的指数小于-4或达到精度时（人话：数值太大或太小）自动选择%e的输出方式，否则以%f的形式输出</p><p id="14ecdd2c-e915-4d9b-9aef-825aa0b5bb9d" class="">（另外，%f, %e默认会保留六位小数且包含末位的0，而%g一定会删除末位多余的0，比如对于%g，100000f 显示为 100000；100000000f 显示为 1e+008）</p><p id="1642073e-5257-80ee-8548-ed56fe497b54" class="">
+</p><p id="e0da5a2d-e00c-4219-8476-10a8f9e5f27b" class="">%p匹配指针/地址，具体而言：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1d222492-9ded-4b20-b06d-235fc1f7b3c2" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int main(void)
+{
+    int a = 100;
+    int *p = &amp;a;
+    // (&quot;int *p = &amp;a;&quot; equals to &quot;int *p; p = &amp;a&quot;)
+
+    printf(&quot;%p\n&quot;,&amp;a);    // 变量a的地址
+    printf(&quot;%p\n&quot;, p);    // p指针的内容，依旧是变量a的地址
+    printf(&quot;%p\n&quot;,*p);    // 变量a的十六进制表示
+    printf(&quot;%p\n&quot;, a);    // 变量a的十六进制表示 (*p == a)
+    printf(&quot;%p\n&quot;,&amp;p);    // p指针本身的地址
+    // 注意，用%p打印变量a的值本身是一种未定义行为，不要尝试
+    return 0;
+}</code></pre><p id="acf1444b-055e-466d-9618-802981efac2c" class="">输出结果是：（仅供参考）</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="632da397-9223-4845-82f5-687c05f25db3" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">000000000062FE1C
+000000000062FE1C
+0000000000000064
+0000000000000064
+000000000062FE10
+// 注：打印地址的位数取决于编译器位数，不足左边补0</code></pre><p id="64d52e76-ec08-484a-811e-dc06c5cc2243" class="">顺带一提，如果我声明int *p2; p2 = p，那么两个指针会指向同一个地址，而两个指针本身的地址依旧不同</p><p id="22186957-da4c-4e6c-999f-ceb61100e7eb" class="">关于指针的知识之后再补吧(￣m￣）</p></div></figure><p id="2b94e8b3-babf-42bc-bef5-ed517fef7c26" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6bdd08b7-c95c-45d3-9c99-cdbbaf843239"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">非必要不要使用goto语句，但偶尔还是很有用的（吧）<p id="2046d14c-871e-4c26-9a91-6e6ed35e0765" class="">比如嵌套循环的跳出，这里让gpt写了个示例：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="b76fac4f-9c07-4da6-933e-1f69f26692f6" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#include &lt;stdio.h&gt;
+
+// 在多维数组中找到target特定值
+int main() {
+    int arr[2][3][3] = {
+        {{1,2,3}, {4,5,6}, {7,8,9}},
+        {{10,11,12}, {13,14,15}, {16,17,18}}
+    };
+    
+    int target = 14;
+    int i, j, k;
+    
+    // 搜索目标值
+    for(i = 0; i &lt; 2; i++) {
+        for(j = 0; j &lt; 3; j++) {
+            for(k = 0; k &lt; 3; k++) {
+                if(arr[i][j][k] == target) {
+                    goto found;
+                    // 找到目标值后直接跳出嵌套循环
+                }
+            }
+        }
+    }
+    
+    printf(&quot;未找到值 %d\n&quot;, target);
+    goto end;
+    
+found:
+    printf(&quot;找到值 %d ，在位置 arr[%d][%d][%d]\n&quot;, target, i, j, k);
+    
+end:
+    return 0;
+}</code></pre><p id="3154accb-c2f8-405f-8abc-f6f724ab1eba" class="">还是有点用？</p></div></figure><p id="20b9e327-9968-4ba9-881c-31231bce5733" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1c3cbdde-ca5b-4771-84b5-832fc431dec6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">char的本质还是int，取决于用%d还是用%c去显示它<p id="55264564-ca4f-486a-9427-e5924b5ac4f3" class="">你甚至可以用char对应的ASCII码计算和比大小</p><p id="0e8d7f39-95eb-48ab-be78-40a9c765c4dd" class="">‘a’ = 97 ; ‘A’ = 65 ; ‘0’ = 48</p><p id="cea2f0fd-7423-4d6b-a551-66677f9c86c3" class="">
+</p><p id="6148fcca-7169-46d6-88bf-1d0cf49f0611" class="">char也分有符号型和无符号型，但是最好不要刻意区分（谁会在char里塞一个不在signed范围的小数字）</p></div></figure><p id="876a98d0-dd85-4f33-a4f0-2343b0866c40" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6bfbc03e-7f8d-4e92-9d3c-d0c1ee04b8cf"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">typedef可以定义新的类型名：<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="5eb416e9-6ead-4959-9018-5cc79b1ded08" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Example #1
+typedef long long int ll;
+// 之后声明新ll int时就可以直接写：ll giant_number;
+
+// Example #2
+typedef struct Monster
+{
+    char name[20];
+    int hp;
+    int atk;
+    int def;
+    int special;
+    int score;
+} Monster;
+// 之后声明新结构体时就可以直接写：Monster monster;</code></pre></div></figure><p id="7fd98af7-bd3e-46ff-9387-a033479e290d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="796732c2-2f7b-4b5b-9aa0-d59e011f1a43"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">sizeof()的重要意义在于可移植性<p id="1622073e-5257-802c-ad20-c3064fe1b052" class="">（比如分配动态内存时，考虑到不同位数机器上，各个数据类型的大小可能不同，这时用sizeof函数可以正确分配动态内存，提升代码的可移植性）</p><p id="81f4e610-7924-44c1-b505-adc8278b44ff" class="">sizeof()的返回值是size_t，对于32位平台，size_t的定义是：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="b1f8e175-7b55-4a20-bdfd-ab9d6c56650f" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#ifndef __SIZE_T
+#define __SIZE_T
+typedef unsigned int size_t;
+#endif</code></pre><p id="1622073e-5257-8002-a590-dfad7238fd18" class="">在 32 位系统中，通常 <mark class="highlight-yellow"><code>size_t</code></mark> 是 32 位无符号整数 (unsigned int)。</p><p id="1622073e-5257-8060-939e-ed7587b3e58f" class="">在 64 位系统中，通常 <mark class="highlight-yellow"><code>size_t</code></mark> 是 64 位无符号整数 (unsigned long 或 unsigned long long)。</p><p id="84486016-dd88-4360-8026-e6c205596821" class="">size_t的实际具体大小取决于平台，但肯定是个unsigned</p></div></figure><p id="6fb499a5-596c-42dc-b098-f1c9869ded31" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fdbf445c-e3cd-4645-89c4-cb69894bdd9d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">数组<mark class="highlight-default"><code>a[n]</code></mark>下标从0开始，上限是n-1，但c/c++不会进行越界检查，也就是说一个数组int a[10]，对a[10]赋值是不会报错的，只不过是a[9]之后的一块神秘未知位置内存被调用了，天知道会不会覆盖什么值<p id="1682073e-5257-80b4-8140-fb336da890ab" class="">甚至可以对a[-1]访问赋值</p><p id="1782073e-5257-8081-bdc9-f831cc4311e9" class="">小 心 R E</p><p id="1642073e-5257-805a-a316-cc753251a9ab" class="">
+</p></div></figure><p id="a04a119c-a96c-47f9-8bbd-40356990ef6d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="bcbf48ab-2848-4f0b-b4c1-cc5e96d88a94"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">对于两个的数组a和b（结构完全相同），如果要把b（已初始化）整体拷贝到a（可以不初始化），可以考虑memcpy<p id="4b9bb830-fca9-4b5f-885a-e26dcc4d90f2" class="">这是原型：<mark class="highlight-default"><code>void *memcpy(void *dest, const void *src, size_t n);</code></mark></p><p id="eaa59570-b5de-43d8-8950-2d99ab9d2ac0" class="">这是例子：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="6825189b-e415-4507-a222-04d00730e4bb" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#include &lt;string.h&gt; ...
+// 省略部分内容
+
+int a[2][5];
+int b[2][5] = {{1, 2, 3, 4, 5},{6, 7, 8, 9, 10}};
+memcpy(a, b, sizeof(b));
+// 将b整体赋给a</code></pre></div></figure><p id="e94ef507-67a6-4380-8a7f-1ed9a2848b4d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="74f118c6-f6f9-40b8-a14a-2a3b44a32d22"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">逗号运算符：表达式1, 表达式2, … , 表达式n<p id="339aee01-8c4d-43af-ac31-839afbc8ddeb" class="">各个表达式依次进行，最后返回表达式n的返回值</p><p id="1572073e-5257-80a7-bd8d-ea043d2b2deb" class="">（casio计算器也有这个）</p><p id="08d3b170-941e-4ec8-8471-88dd39798734" class="">比如：对于二维数组a，<mark class="highlight-default"><code>a[i,j]</code></mark>表示<mark class="highlight-default"><code>a[j]</code></mark></p></div></figure><p id="5d5c3d5f-8ecc-4c0a-9375-b633496f71a0" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a6802420-5f4f-4847-b55e-b8153a7af624"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">函数间传递参数遵循值传递而不是地址传递<p id="0cd94854-145c-4b17-a2a8-824d1baecfdf" class="">所以说指针是神</p><p id="8ff362ad-6df8-43bf-add3-026759f0e56f" class="">但是对于数组型的形参改变可以在实参中直接体现（不像是值传递）</p><p id="d9323e4b-f69d-4fc5-8372-3396b5df1cdc" class="">因为指针是神（int a[n], *a = a[0], *(a+k) = a[k]）</p><p id="1572073e-5257-80c5-b39d-e33f7cbb529a" class="">（具体需要看数组退化为指针这部分）</p></div></figure><p id="4c9aa552-0418-464b-95a2-3e4fde22a221" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6537d01b-4a5c-4ffb-bda7-e2f5be56f7ac"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">形式参数出现在函数定义中，实际参数出现在函数调用中<p id="936658f2-59f1-4b51-9f59-21eea8737b92" class="">如果实参与形参不匹配，函数调用也能实现：</p><p id="e1847609-3949-465d-8a46-da5899ee804c" class="">如果编译器在调用前遇到了函数原型，那么编译器会对实参进行对应的隐式类型转换；</p><p id="15b997b3-f5af-446f-a114-19443385b038" class="">如果编译器在调用前没有遇到函数原型，编译器只会执行默认的参数提升：把float转换为double，把short和char转换为int，这样可能会出问题，比如说函数内有<mark class="highlight-default"><code>printf(&quot;%d&quot;,a);</code></mark>，a可能是double型的参数</p></div></figure><p id="42e7076a-4b54-455c-bf4b-17f4bf5e9414" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0a7f93d9-ca55-40ad-89cd-7b534e82a3e8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">形式参数可以是数组，其中只有数组的第一维可以不说明长度<p id="17ee92c9-0b95-4fd3-9a91-903f1ab4d591" class="">就以二维数组来说，行可以不指定，但列数必须指定</p><p id="d673393b-3eaf-4335-b8e5-a11c7e840626" class="">解决方案包括指针数组和变长数组形参：</p><p id="1642073e-5257-807a-b62d-eca6c8964ab9" class=""><em><strong>（注意：变长数组VLA是C99+的特性，C++没有这种特性，不能用）</strong></em></p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="2955a2ed-8e58-4841-94f3-0365a8ecc507" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Solution #1
+void func(int *arr[], int rows);
+// 使用指针数组
+
+// Solution #2
+void func(int rows, int cols, int arr[rows][cols]);
+// 使用变长数组，注意必须先声明rows和cols才能声明arr
+// void func(int arr[rows][cols], int rows, int cols) 不正确
+// void func(int, int, int [][*]) 是正确的，[*]等价于[col]
+// *是特殊的占位符，表示数组的第二维是由前面声明的形式参数（col）决定的（如果留空则会视为未初始化，所以用*占位）</code></pre><p id="a31b2ffe-a591-4c11-804b-3c705cc8095b" class="">
+</p><p id="772c68bd-2680-4228-8eb6-dd8923e886d1" class=""> 另外，C99允许在数组参数声明中使用关键字static（仅允许第一维），这会告诉编译器传入数组的第一维的长度至少为某个值，比如</p><p id="5f5b1217-a00a-4280-88ab-e88ae1c73074" class=""><mark class="highlight-yellow"><code>void func(int a[static </code></mark><em><mark class="highlight-yellow"><code>ROWS</code></mark></em><mark class="highlight-yellow"><code>][10], int n)</code></mark> 意为传入的数组a至少有<em>ROWS</em>行，在调用内存方面会有优化（但如果实际传入的数组不足<em>ROWS </em>行，会导致“未定义行为”）</p><p id="69a3dc0d-5769-419f-adbf-0cf09329c6ff" class="">
+</p><p id="c7d6ac6a-dae1-402c-84b3-3f51de0e280f" class="">另外，C99允许使用复合字面量，使用例：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="4b56c24f-85ab-4113-a9bb-f2919f82bfd8" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">void print_array(int arr[], int size) {
+    for(int i = 0; i &lt; size; i++) {
+        printf(&quot;%d &quot;, arr[i]);
+    }
+    printf(&quot;\n&quot;);
+}
+
+int main()
+{
+    print_array((int[]){1, 2, 3, 4, 5}, 5);
+    // 相当于传递了一个数组{1, 2, 3, 4, 5}及其长度size = 5
+    return 0;
+}</code></pre><p id="2fee00e3-7d90-4cd8-bba7-4d1380725fbd" class="">如果一个特定变量没有必要专门为其设一个变量名（可能这个特定的值只用到了一次），就可以直接塞到函数调用中</p></div></figure><p id="7fad2ebb-5634-486b-b9e3-cc9b14aa2264" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="e0a563eb-6d0d-41cc-87b4-29553b221c7f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">把数组名传递给函数时<strong>不要加方括号</strong></div></figure><p id="49d8c144-7f7f-43e7-a48f-7b8a420b10d5" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="5e13a362-fa88-4aa6-86da-2bea6916928c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">exit函数属于&lt;stdlib.h&gt;头，和return作用相似，但是exit的强大之处在于，它无论在不在主函数中被调用，都可以直接终止程序<p id="3f5428cc-375f-478e-8abb-dd4594f9b947" class="">return 0 和 exit(0) 和 exit(EXIT_SUCCESS) 都表示正常退出</p><p id="62da48b4-3efc-48ec-91ee-93012538522a" class="">return 1 和 exit(EXIT_FAILURE) 都表示异常退出</p></div></figure><p id="3bc7fab9-65d8-4191-a37c-70c0fc2dc193" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="cee11dd8-7cad-4fa3-a2c4-3ec310af2c4e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">快速排序程序实现：<p id="1582073e-5257-80e3-a009-fc0fcef65bb2" class="">摘自kimi：<div class="indented"><blockquote id="1582073e-5257-802b-af6a-cff6ac90d93b" class="">这三个函数都是用于在数组中进行快速排序算法中的分区操作的实现。分区操作的目的是将数组分为两部分，使得左边的所有元素都不大于基准值（pivot），右边的所有元素都不小于基准值。下面是对这三个函数的详细解释：</blockquote><h3 id="1582073e-5257-80e3-a8cd-d62a9b195648" class="">partition_1</h3><blockquote id="1582073e-5257-8042-986e-c56ae99af32b" class="">这个函数实现了快速排序中的Lomuto分区方案。它使用两个指针<code>i</code>和<code>j</code>，分别从数组的两端开始向中间扫描。<code>i</code>从左边开始，<code>j</code>从右边开始。如果<code>arr[j]</code>大于等于<code>pivot</code>，则<code>j</code>向左移动；如果<code>arr[i]</code>小于等于<code>pivot</code>，则<code>i</code>向右移动。当<code>i &lt; j</code>时，循环继续。如果<code>i &lt; j</code>，交换<code>arr[i]</code>和<code>arr[j]</code>。最后，将<code>pivot</code>（即<code>arr[low]</code>）与<code>arr[i]</code>交换，使得<code>pivot</code>位于正确的位置。</blockquote><h3 id="1582073e-5257-80d2-9bce-c8655147c1ad" class="">partition_2</h3><blockquote id="1582073e-5257-8054-9166-d0c95cd86bf6" class="">这个函数实现了快速排序中的Hoare分区方案。与<code>partition_1</code>类似，它也使用两个指针<code>i</code>和<code>j</code>，但是它的操作方式略有不同。它在每次循环中，如果找到<code>arr[j]</code>小于<code>pivot</code>，则将<code>arr[i]</code>的值赋给<code>arr[j]</code>，并将<code>i</code>向右移动；如果找到<code>arr[i]</code>大于<code>pivot</code>，则将<code>arr[i]</code>的值赋给<code>arr[j]</code>，并将<code>j</code>向左移动。这样，<code>i</code>和<code>j</code>会逐渐靠近，直到它们相遇或交叉。最后，将<code>pivot</code>放在<code>i</code>的位置。</blockquote><h3 id="1582073e-5257-80c7-bb50-c57a34838a84" class="">partition_3</h3><blockquote id="1582073e-5257-8069-b468-d93824499988" class="">这个函数实现了一个类似于Dutch national flag问题的分区方案，它是对快速排序中Dijkstra分区方案的一个变种。它使用三个指针：<code>previous</code>和<code>current</code>用于遍历数组，<code>pivot</code>用于存储基准值。<code>previous</code>用于跟踪小于等于<code>pivot</code>的元素的最后一个位置，<code>current</code>用于遍历数组。如果<code>arr[current]</code>小于等于<code>pivot</code>，则交换<code>arr[current]</code>和<code>arr[previous+1]</code>，并将<code>previous</code>加1。最后，将<code>pivot</code>与<code>arr[previous]</code>交换，使得<code>pivot</code>位于正确的位置。</blockquote></div></p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-80aa-9e80-d9096b7f2443" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">/*
+* Method #1 
+* 霍尔法（双向扫描法）： pivot不动，左右两侧“指针”向pivot方向靠近直到重合，遇到arr[i] &gt; pivot &gt; arr[j] （两个不等号同时成立）的情况就交换arr[i], arr[j]的值
+*/
+
+int partition_1(int arr[], int low, int high)
+{
+    int pivot = arr[low];    // 这里以第一个元素的值作为pivot
+    int i = low, j = high;
+    // 应当时刻注意是否有i &lt; j
+    while (i &lt; j)
+    {
+        while (i &lt; j &amp;&amp; arr[j] &gt;= pivot)
+            j--;
+        while (i &lt; j &amp;&amp; arr[i] &lt;= pivot)
+            i++;  
+        // 到达这一步，说明arr[i] &gt; pivot &gt; arr[j]，可以将两者交换
+        if (i &lt; j)
+        {
+		        swap(arr[i],arr[j]);
+        }
+    }
+
+    // 这里把i,j两个&quot;指针&quot;重合时指向的元素和pivot对应的元素交换位置
+    swap(arr[low],arr[i]);
+
+    return i;    // pivot值所在的位置是arr[i]
+}
+
+
+
+/*
+* Method #2 
+* 挖坑法：取出pivot的值作为“坑”，依旧是左右两侧“指针”，每次找到arr[i] &gt; pivot / pivot &gt; arr[j]（只要有一个不等号成立，而不是方法一中两个不等号都成立才会进行下一步操作）就会用“指针”当前指向的值去“填坑”，并在指针位置形成一个新坑，最后的坑就是pivot的新位置
+*/
+
+int partition_2(int arr[], int low, int high) {
+    int pivot = arr[low];    // 这里还是以第一个元素的值作为pivot
+    int i = low, j = high;
+    // 依旧应当时刻注意是否有i &lt; j
+    while (i &lt; j)
+    {
+        // 先从右向左找小于基准值的数
+        while (i &lt; j &amp;&amp; arr[j] &gt;= pivot)
+            j--;
+        if (i &lt; j)
+        {
+            arr[i] = arr[j];
+            i++;
+        }
+        
+        // 之后从左向右找大于基准值的数
+        while (i &lt; j &amp;&amp; arr[i] &lt;= pivot)
+            i++;
+        if (i &lt; j)
+        {
+            arr[j] = arr[i];
+            j--;
+        }
+    }
+    
+    // 将基准值放到最终形成的坑
+    arr[i] = pivot;
+    return i;
+}
+
+
+
+/*
+* Method #3 
+* 单向扫描法：
+*/
+
+int partition_3(int arr[], int left, int right)
+{
+    int pivot = arr[left];     // 这里依旧以第一个元素的值作为pivot
+    int previous = left;       // 始终指向≤ pivot 的区域的最后一个元素  
+    int current = left + 1;    // 当前正在比较的元素位置
+    
+    while (current &lt;= right)
+    {
+				// 注意短路特性，使得 previous 只在找到≤ pivot 的元素时才会自增
+				// 而且在确保previous始终在current左侧时才会执行交换
+        if (arr[current] &lt;= pivot &amp;&amp; ++previous != current)
+        {
+            swap(arr[current], arr[previous]);
+        }
+        current++;
+    }
+    
+    swap(arr[previous], arr[left]);
+    return previous;
+}
+
+
+// 这里是递归操作区
+void quickSort(int arr[], int low, int high)
+{
+    if (low &lt; high)
+    {
+        // 分区(partition)，并且获取新主元的位置
+        int pivotIndex = partition(arr, low, high);
+        // 对pivot左侧子数组排序
+        quickSort(arr, low, pivotIndex - 1);
+        // 对pivot右侧子数组排序
+        quickSort(arr, pivotIndex + 1, high);
+    }
+}
+
+
+// 主函数中调用函数方式为quickSort(arr[], 0, n-1)，表示对所有元素排序</code></pre></div></figure><p id="1522073e-5257-8066-bc4f-e614e8f22730" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-80e2-b7c8-efcf8e70d183"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="6a7441b4-7d59-4225-bab0-ad10e524fa30" class="">局部变量，其作用域局限在该代码块，生命周期仅限于每次调用（当函数调用结束时，该局部变量被销毁，下次调用时重新赋值）</p><p id="1522073e-5257-8044-bbe2-d2516008fe33" class="">在局部变量声明中放置static可以使局部变量由自动存储期限变为静态存储期限，拥有静态存储期限的变量拥有永久的存储单元，所以在整个程序运行期间都会保留其值</p><p id="1522073e-5257-80cd-8924-fb14fa80163a" class="">此处摘抄期中考试原题：</p><p id="1522073e-5257-8018-a24c-cecefcf76d3f" class=""><em>阅读以下代码，给出运行结果，并给出理由</em></p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-8001-be66-c664b8adadac" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">#include &lt;iostream&gt;
+static int a = 0;
+int b = 0;
+void count()
+{
+    static int c = 0;
+    int d = 0;
+    std::cout &lt;&lt; &quot;a = &quot; &lt;&lt; a++ &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;b = &quot; &lt;&lt; ++b &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;c = &quot; &lt;&lt; c++ &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;d = &quot; &lt;&lt; ++d &lt;&lt; std::endl;
+}
+int main()
+{
+    count();
+    count();
+    count();
+    count();
+return 0;
+}</code></pre><p id="1522073e-5257-80d7-82a5-d52fd30bc729" class="">这里是答案和解析：</p><figure id="1522073e-5257-8040-b036-f301ef7b2d81" class="link-to-page"><a href="https://www.notion.so/1522073e52578040b036f301ef7b2d81?pvs=21">答案和解析</a></figure></div></figure><p id="1522073e-5257-802c-a05b-ca2fd90381cf" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-8085-b16d-fda589da0338"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="585719c1-e532-48f9-9a49-6181a9c93b4e" class="">形参也是一种局部变量，不过它的初始化方式和时机和纯粹的形式参数不同（函数调用时初始化，在函数代码块内都有效）</p><p id="1612073e-5257-8039-95b8-dbbad3abb61f" class="">形参的作用域，生命周期，内存分配（栈区）都符合局部变量的特征</p></div></figure><p id="1522073e-5257-80ce-8620-f5163b6c60bd" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-80f6-943d-ebe828e0df9a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1522073e-5257-80b3-a535-ec2d2ffcc3b9" class="">程序块和作用域</p><p id="1522073e-5257-80aa-990c-d9c638833e92" class="">什么是程序块?</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-80b8-b470-d150f2950a52" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">{
+int temp = i;
+i = j;
+j = temp;
+}</code></pre><p id="1522073e-5257-8068-97d7-f116f7cfd3b9" class="">这个用大括号括住的就是一个程序块</p><p id="1522073e-5257-80f3-8d7c-d428b084d81f" class="">声明在程序块中为自动存储期限，变量具有块作用域</p><p id="1522073e-5257-809e-af47-da7a7988f97f" class="">一个函数体就是一个大的程序块</p><p id="1522073e-5257-8019-ae34-cbb0f1fdeb6d" class="">
+</p><p id="1522073e-5257-80f8-b381-fc8ac88c6be5" class="">作用域规则使得相同的标识符能够具有不同的意义</p><p id="1522073e-5257-8057-be7d-fe40cc051238" class="">当程序块内部声明命名一个标识符时，如果这个标识符已经可见（当前位置可以访问和使用这个标识符），那么新的声明会临时性的隐藏旧的声明，在新的声明的生命周期结束时，标识符会重新获得旧的声明</p><p id="1522073e-5257-8037-b532-c4e5ce19caaf" class="">简称：内层声明在作用域内覆盖外层声明</p><p id="1532073e-5257-80ee-9559-ef40d8391f0b" class="">这里有一个例子：</p><figure id="1522073e-5257-80fe-be7d-e901da60b6be" class="image"><a href="image%201.png"><img style="width:497.5874938964844px" src="image%201.png"/></a></figure><p id="1522073e-5257-8072-8c4f-cb31d2e68daf" class=""><code>Declaration 2</code>隐藏了<code>Declaration 1</code>，所以赋值<mark class="highlight-yellow"><code>i = 1</code></mark>引用的是<code>Declaration 2</code>中的形参；</p><p id="1522073e-5257-802b-8359-d619f23180fb" class=""><code>Declaration 3</code>隐藏了<code>Declaration 1</code>，并且<code>Declaration 2</code>超过了作用域，所以判定<mark class="highlight-yellow"><code>i &gt; 0</code></mark>引用了<code>Declaration 3</code>的变量；</p><p id="1522073e-5257-8076-858e-e73f2d032d91" class=""><code>Declaration 4</code>隐藏了<code>Declaration 3</code>，所以赋值<mark class="highlight-yellow"><code>i = 3</code></mark>引用了<code>Declaration 4</code>中的变量</p><p id="1522073e-5257-80e8-ad20-dc222a8a0fca" class="">赋值<mark class="highlight-yellow"><code>i = 4</code></mark>引用了<code>Declaration 3</code>的变量，由于<code>Declaration 4</code>超过了作用域，所以不能被引用</p><p id="1522073e-5257-802d-b883-db4a2dbb14ff" class="">赋值<mark class="highlight-yellow"><code>i = 5</code></mark>引用了<code>Declaration 1</code>的变量</p><p id="1522073e-5257-80ff-b4c4-ed4bc4b380ce" class="">
+</p></div></figure><p id="1522073e-5257-8028-959e-e11808d994c8" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-8027-ae12-fbc6f06637f6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="83c6b594-60a5-4697-b5d4-c3ad3ae50f5a" class="">指针在多数情况下就是地址</p><p id="1522073e-5257-801f-a875-dc64bf4b52b4" class="">对于指针p，*p表示p指向的对象；对于变量x，&amp;x表示x在内存中的地址</p><p id="1522073e-5257-8001-90c1-e3f90742e915" class="">可以把*（间接寻址运算符）和&amp;（取地址运算符）看作互为逆运算</p><p id="1532073e-5257-80db-924c-d19d44f2c59e" class="">*&amp;a 和 &amp;*a 和a在表达式中是等价的，虽然类型不一定相同</p><p id="1522073e-5257-80b3-9670-cd3c75027250" class="">至于在声明指针时（int *p）出现的*，其实并不是间接寻址运算符，只是表明“这个数据类型是（指向*号左侧的数据类型的）指针”</p><p id="1522073e-5257-802c-9edf-d109db098e2b" class="">写作<mark class="highlight-teal"><code>int* p</code></mark>而不是<mark class="highlight-yellow"><code>int *p</code></mark>可能更好理解此处*的实际作用</p><p id="1522073e-5257-80ac-a54b-d64ca04b3318" class="">这下就更好理解为什么<mark class="highlight-teal"><code>int *p = &amp;a;</code></mark> 和 <mark class="highlight-teal"><code>&quot;int *p; p = &amp;a&quot;</code></mark>是等价的了</p><p id="15d2073e-5257-808b-95a7-d56fa7899d1d" class="">总结一下上面的内容就是：</p><p id="1612073e-5257-80b2-9b43-f2c575dd12ca" class="">*的作用包括：声明一个变量为指针；寻址（；乘号✖）</p></div></figure><p id="1522073e-5257-8044-8f7a-e43243fdc100" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-80c8-8de0-c5988ab11444"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="e6deb86f-59e9-4188-bed1-0f511c494600" class="">如果指针p指向了变量a，那么*p和a<strong>在访问值上</strong>没有任何区别，比如：</p><p id="1522073e-5257-80d5-b1dc-ec87f06d5822" class=""><mark class="highlight-teal"><code>*p == a</code></mark>是成立的</p><p id="1522073e-5257-8022-8e1c-c76878b5067b" class=""><mark class="highlight-teal"><code>a++</code></mark> 和<mark class="highlight-teal"><code>(*p)++</code></mark>是等价的（和<code>*p++</code>不等价！）</p><p id="1522073e-5257-8027-a82f-c47b373e9226" class="">
+</p></div></figure><p id="1522073e-5257-8035-86aa-c70ca744a5d6" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-802e-8c4a-ed4622609ab6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="e5808ee5-11df-428c-89b8-87ccdf9c648f" class="">const与指针：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1522073e-5257-8095-bc91-e79f56da3f41" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Example #1
+int a[5] = {1, 2, 3, 4, 5};
+const int *p = &amp;a;
+*p++;                      // LEGAL
+(*p)++;                    // WRONG
+// const int *p中的const修饰的是*p，而不是p本身
+
+// Example #2
+int a[5] = {1, 2, 3, 4, 5};
+int * const p = &amp;a;
+*p++;                      // WRONG
+(*p)++;                    // LEGAL
+// int * const p中的const修饰的是p本身，而不是*p
+
+// const int * const p = &amp;a; 也是可行的</code></pre></div></figure><p id="1522073e-5257-8099-975b-cae64ccf218c" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-80f5-af5b-cd0c55a5ca0a"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="8facb4e6-bfaf-4058-a9e7-f4b17ea88b33" class="">指针可以作为返回值</p><p id="1522073e-5257-8038-af28-d3a9155b1c2d" class="">但是不要返回指向自动局部变量（在函数内部，不使用static声明的变量）的指针</p><p id="1522073e-5257-8003-9c87-f6e8246658e3" class="">因为函数返回后，自动局部变量就被销毁了</p><p id="1642073e-5257-8084-be67-e83b4752ce0d" class="">此时指针成为“悬挂指针”，指向已经被释放的内存，不应该再被解引用</p></div></figure><p id="1522073e-5257-80b7-8123-d17ed953b2dd" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1522073e-5257-801c-8854-edf5be978524"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="3d96cc00-f2cc-4503-abac-4c0785b358a2" class="">指针和一维数组</p><p id="1532073e-5257-80c4-8278-cd248c87c567" class="">一个关于一维数组的例子：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-8051-9b3c-ec1715f3a95c" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int *p = a;          // CORRECT
+int *q = &amp;a;         // PROBABLY INVALID
+int *r = a[5];       // WRONG
+int *s = &amp;a[5];      // CORRECT</code></pre><p id="1532073e-5257-800c-b6f6-e2b919b6abfe" class="">指针p指向的是数组的第一个元素（a其实就是指向a[10]首元素的指针），*p == a[0] &amp;&amp; a[0] == 1;</p><p id="1532073e-5257-80aa-9d9d-cb6ac8dea85f" class="">指针q指向的也是数组的第一个元素，但是类型实际上不匹配（q应该是指向数组第一个元素的指针，而不是指向数组对象的指针），会有类型警告。正确的写法是：<mark class="highlight-teal"><code>int (*q)[10] = &amp;a;</code></mark>（括号不可省略，<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">详见此</a>）</p><p id="1532073e-5257-803a-bd4c-c419069ae583" class="">指针r的赋值是错误的，不能把数值赋给指针</p><p id="1532073e-5257-809b-adfe-e7eb436bb328" class="">指针s指向的是数组的第6个元素a[5]</p><p id="1532073e-5257-807f-8b0a-f515599cda75" class="">
+</p><p id="1532073e-5257-8002-b0ce-e447975d1bcc" class="">a作为数组，其本质是一个指向数组第一个元素的<strong>常量</strong>指针（a++是非法的），这句话和<mark class="highlight-teal"><strong><a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">这段内容</a></strong></mark>可以帮助理解上面的内容</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-8075-948b-cd29b3821445" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int a[10];
+// 在数值上，a == &amp;a[0]；a + i == &amp;a[i]
+// 在类型上，sizeof(a)返回数组大小；sizeof(&amp;a[0])返回指针大小；而sizeof(a + i)返回的也是指针大小
+// 因为在sizeof(a)中a代表数组，而sizeof(a + i)中a已经“退化”成了指针参与指针运算</code></pre></div></figure><p id="1642073e-5257-80b6-a3f6-f1b3831d8498" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1642073e-5257-804b-9d9d-d54ef4461c46"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="dc3deed7-3237-4f4a-9b67-d0d1cbf5deda" class=""><mark class="highlight-yellow"><code>int *q[10]</code></mark> 和 <mark class="highlight-yellow"><code>int (*q)[10]</code></mark>有何不同？</p><ul id="1642073e-5257-805a-a73f-e72376d40520" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow"><code>int *q[10]</code></mark> 会被解析为 <mark class="highlight-yellow"><code>int *(q[10])</code></mark>， <mark class="highlight-yellow"><code>q[10]</code></mark>表示先和<mark class="highlight-yellow"><code>q</code></mark> 结合，并且是一个数组类型。再用<mark class="highlight-yellow"><code>*</code></mark>和类型<mark class="highlight-yellow"><code>int</code></mark> 结合， <mark class="highlight-yellow"><code>q</code></mark>成为一个包含 10 个指向 <mark class="highlight-yellow"><code>int</code></mark> 的指针的 <strong>指针数组</strong>；</li></ul><p id="1652073e-5257-8006-81f2-faf04628bb6f" class="">（简单来说：声明一个数组<mark class="highlight-yellow"><mark class="highlight-default_background"><code>q[10]</code></mark></mark>，其存储内容是指针<mark class="highlight-yellow"><mark class="highlight-default_background"><code>int*</code></mark></mark>）</p><p id="1652073e-5257-8071-a6a6-e3c357792d4f" class="">
+</p><ul id="1642073e-5257-806e-ad0a-cb583dd55dfa" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow"><code>int (*q)[10]</code></mark>中，<mark class="highlight-yellow"><code>()</code></mark>迫使 <mark class="highlight-yellow"><code>q</code></mark><mark class="highlight-yellow"> </mark>先结合， 此时 <mark class="highlight-yellow"><code>q</code></mark> 变成 一个指针， 再和 <mark class="highlight-yellow"><code>[10]</code></mark> 结合，<mark class="highlight-yellow"><code>q</code></mark> 指向一个含有 10 个 <mark class="highlight-yellow"><code>int</code></mark> 型数据的数组。变成了指向数组的 <strong>数组指针</strong> </li></ul><p id="1652073e-5257-8072-8c11-ee7b9029d303" class="">（简单来说：声明一个指针<mark class="highlight-yellow"><mark class="highlight-default_background"><code>q</code></mark></mark>，其指向了数组<mark class="highlight-yellow"><mark class="highlight-default_background"><code>int[10]</code></mark></mark>）</p></div></figure><p id="1532073e-5257-8063-806a-e49b4e1b439c" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1532073e-5257-8002-9ad9-fc989f3d82c4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="f6b6caa2-b64d-4f11-9098-e9bd8f7cb6c9" class="">数组声明a[]和指针声明*a有什么异同</p><p id="1532073e-5257-80fb-9b76-f7375ad4eb8a" class="">相同点：</p><p id="1532073e-5257-8098-9932-df6099dcf79f" class="">①对于形式参数而言，a[]和*a没有区别</p><p id="1532073e-5257-80be-ae07-e8f73368ac9e" class="">（数组作为参数时总是会退化为指针）</p><p id="1532073e-5257-80f3-8589-ddabf95a3b2c" class=""><mark class="highlight-yellow"><code>int func(int a[], int n)</code></mark> 相当于 <mark class="highlight-yellow"><code>int func(int *a, int n)</code></mark></p><p id="1532073e-5257-8097-ae72-e6a93bacf461" class="">②都可以用下标访问元素</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-803e-b32c-cfaefff421db" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int arr[] = {1, 2, 3, 4, 5};
+int *p = arr;
+arr[0] = -1;          // VALID
+p[1] = -2;            // VALID</code></pre><p id="1532073e-5257-809a-9395-fcd3fd9a2671" class="">③本质上a都存储地址值</p><p id="1532073e-5257-800c-a02c-c0364a6ad13a" class="">不同点：</p><p id="1532073e-5257-80e0-80f5-c0c81f3696e3" class="">①a[]在编译时就分配好了连续内存空间，而*a只分配了指针本身的空间，需要额外分配存储空间：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-80d6-8134-c27766c11f51" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int a[5] = {1, 2, 3, 4, 5};               // 在栈上自动分配
+int *a = (int *)malloc(5 * sizeof(int));  // 在堆上手动分配</code></pre><p id="1532073e-5257-802f-aef0-e57e420e7586" class="">②数组名a不能被赋值（本质是常量指针），但指针a可以</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-8037-ba33-fbf09593bd27" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int arr[] = {1, 2, 3, 4, 5};
+int *p = arr;
+arr = p;             // WRONG
+p = arr;             // CORRECT</code></pre><p id="1532073e-5257-8094-b775-cbe8bdbdb8c1" class="">③sizeof对应的值不一样，一个是数组，一个是指针</p></div></figure><p id="1532073e-5257-80e0-9513-e09cf0058e2c" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1532073e-5257-80ef-98a0-f4167140867c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1532073e-5257-80a3-b85c-db61c5701651" class="">指针与自增/自减符</p><table id="1532073e-5257-8085-834f-d063d4355544" class="simple-table"><tbody><tr id="989d49c9-a737-4a12-b42a-7bab6c1fa89d"><td id="l|_A" class="" style="width:118.30000305175781px">*p++ 或 *(p++)</td><td id="jb;l" class="" style="width:427.3000183105469px">先取出*p并作为返回值，再后移指针</td></tr><tr id="d410c602-f127-437d-9a69-2861c3cc0cc7"><td id="l|_A" class="" style="width:118.30000305175781px">(*p)++</td><td id="jb;l" class="" style="width:427.3000183105469px">先取出*p并作为返回值，再使*p（值）自增</td></tr><tr id="e19741ea-4d5e-47a4-a13b-f175c0d61c22"><td id="l|_A" class="" style="width:118.30000305175781px">*++p 或 *(++p)</td><td id="jb;l" class="" style="width:427.3000183105469px">先后移指针，再取出*(p+1)（也就是新的*p）作为返回值</td></tr><tr id="1532073e-5257-8015-ba56-f9682d564929"><td id="l|_A" class="" style="width:118.30000305175781px">++*p 或 ++(*p)</td><td id="jb;l" class="" style="width:427.3000183105469px">先取出*p并使*p（值）自增，自增后的值作为返回值</td></tr></tbody></table></div></figure><p id="1532073e-5257-803b-b129-cbd49ac32125" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1532073e-5257-8031-ad5a-e6d92156e570"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="3556f0d3-72d8-40b3-b046-75a37eae7b70" class="">指针和多维数组</p><p id="1532073e-5257-80c4-b94b-cfc6f0dc42d8" class="">首先，多维数组是用多个一维数组模拟出来的</p><p id="1532073e-5257-80e1-ad08-c7e6ca34da30" class="">从内存分配上说，a[m][n]就是m个长度为n的一维数组，在内存分配时是首尾连续相连的</p><p id="1532073e-5257-8049-aa7f-ea51a29d48f4" class="">从指针上也可以理解为，a[m][n]就是一个长度为m的一维数组，而这个一维数组的每个元素都是一个长度为n的一维数组（如图所示）</p><figure id="1532073e-5257-80c5-a9e6-fc7c9cf6e293" class="image"><a href="IMG_2446.jpeg"><img style="width:336px" src="IMG_2446.jpeg"/></a></figure><p id="1532073e-5257-8003-8b32-e7af77f68984" class="">
+</p><p id="1532073e-5257-80de-afd3-fb2a20c436cd" class="">对于a的解引用，可以简单地说：</p><p id="1532073e-5257-8099-9f76-e7fc7444c944" class=""><mark class="highlight-yellow"><code>a</code></mark>对应二维数组（类型是<mark class="highlight-yellow"><code>int (*)[n]</code></mark>），<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">（数组衰减为指针时）</a>指向了第一个一维数组a[0]（<mark class="highlight-yellow"><code>*a</code></mark>）；</p><p id="1532073e-5257-80ed-accb-cb06c1a5c67c" class=""><mark class="highlight-yellow"><code>*a</code></mark>对应一维数组（类型是<mark class="highlight-yellow"><code>int *</code></mark>），<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">（数组衰减为指针时）</a>指向了第一个元素a[0][0]（<mark class="highlight-yellow"><code>**a</code></mark>）；</p><p id="1532073e-5257-8041-a7f6-d7354d00c1a6" class=""><mark class="highlight-yellow"><code>**a</code></mark>对应a[0][0]元素本身（类型是<mark class="highlight-yellow"><code>int</code></mark>）</p><p id="1542073e-5257-80ef-8952-de252f65ed1d" class=""><mark class="highlight-yellow"><code>a</code></mark>和<mark class="highlight-yellow"><code>*a</code></mark>实际指向的地址是一样的，它们最大的区别在于类型不同</p><p id="1532073e-5257-80af-806f-c3e9eefd951b" class="">
+</p></div></figure><p id="1532073e-5257-80a3-a121-d75701b9a302" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1532073e-5257-802a-bf30-c6780f732ba6"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1e82c252-deae-49f9-98ba-da712eadd8af" class=""><strong>当数组在大多数表达式中使用时，它会自动转换（衰减）为指向其第一个元素的指针，在sizeof()，取地址&amp;，或使用字符串字面量初始化等情况下不会衰减</strong></p><p id="1532073e-5257-80bc-abd7-c71e1f6a560c" class="">这就是为什么大多数情况下数组能经常和指针混着用，但是说到底数组和指针确实不可互换</p></div></figure><p id="1532073e-5257-80b7-9b6e-f88d48b48c0a" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1532073e-5257-80d7-b03b-ed79d88747b0"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="d97adc2c-61fc-4396-aff3-757257864f87" class="">利用指针处理二维数组的行和列：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1532073e-5257-804c-a9a1-f19e8747084f" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int arr[4][4];
+// 给某个特定元素赋值
+void modifyElement(int (*arr)[4], int row, int col, int newValue)
+{
+    *(*(arr + row) + col) = newValue;
+   // 此处的行和列都是从0开始的，而不是1
+   // 等价于 arr[row][col] = newValue
+}
+
+// 清空指定行
+void clearRow(int (*arr)[4], int row, int cols)
+{
+    for(int i = 0; i &lt; cols; j++)
+        *(*(arr + row) + i) = 0;
+}
+
+// 清空指定列
+void clearColumn(int (*arr)[4], int col, int rows)
+{
+    for(int i = 0; i &lt; rows; i++)
+        *(*(arr + i) + col) = 0;
+}</code></pre></div></figure><p id="1542073e-5257-8002-b767-d7882d3488b0" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1542073e-5257-80c3-8986-d5d245fae0d4"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="db5a8423-0201-4f8a-84ce-4ca092912108" class="">对于一维数组<mark class="highlight-yellow"><code>a[i]</code></mark>，<code>a[i]</code> ⇆ <code>*(a + i)</code> ⇆ <code>*(i + a)</code> ⇆ <code>i[a]</code></p><p id="1542073e-5257-8015-8d91-ebddceeb89c6" class="">合法但不合理</p></div></figure><p id="1542073e-5257-8014-ba3e-e783dc971f0d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1542073e-5257-8046-8003-db1e22ccaa69"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="6e9c05b8-4142-40ed-bd22-935be344a4f9" class="">如果字符串字面量过长，可以通过多种方法分多行延续：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1542073e-5257-8076-94f1-e923466513e5" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Method #1
+int main ()
+{
+    printf(&quot;The quick brown fox \
+jumps over a lazy dog.&quot;) 
+}
+// 使用续行符，注意下一行不能出现空白字符（会破坏缩进）
+
+// Method #2
+int main()
+{
+    printf(&quot;The quick brown fox&quot;
+           &quot;jumps over a lazy dog.&quot;)
+}
+// 使用多个字符串字面量，编译器会自动连接（不破坏缩进）
+
+// Method #3 多用几个printf()</code></pre></div></figure><p id="77781680-480d-4980-9cda-cac664c01b03" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6170a44e-483e-4325-8a4b-213785737607"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">类似于数组，对于字符串char *ch，ch表示字符串首个字符的地址<p id="15f2073e-5257-80c4-b929-c60324107529" class="">特别的是字符串总以\0结尾（结束符，标志着字符串末尾，占据一个字节的空间，strlen函数不会计算该字符）</p><p id="b31ff38b-6881-4810-bef2-b7bd55bad896" class="">分配动态空间的时候应该为\0多分配一个字符空间，有\0编译器才能识别出字符串应在何处结束</p><p id="95e75764-d728-48f4-96ea-6941cf1a14b8" class="">
+</p></div></figure><p id="15f2073e-5257-8017-8694-e385799048a8" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15f2073e-5257-8081-ab1c-eabfecd7acd2"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="0dfe7f8c-59f0-46c5-8663-2725931df845" class="">c语言允许对指针取下标：</p><p id="15f2073e-5257-80c1-bdbc-ee4d31927fca" class=""><mark class="highlight-yellow"><code>char ch = &quot;abc&quot;[1]</code></mark> 即为<mark class="highlight-yellow"><code>char ch = &#x27;b&#x27;</code></mark></p><p id="15f2073e-5257-8085-b9eb-e034dfab4b3a" class="">（字符串字面量退化为指针）</p><p id="15f2073e-5257-80fd-a391-eb7c5a64f7ca" class="">
+</p></div></figure><p id="15f2073e-5257-8098-8c3c-e56cb16d6a44" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15f2073e-5257-8083-b70f-dba20e0dcb98"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="4363816f-fd5d-4a21-a249-4556159e871e" class="">字符串变量的初始化</p><p id="15f2073e-5257-80ce-8d19-c2c2265f56cc" class="">类比<mark class="highlight-yellow"><code>int arr[5] = {1,2,3,4,5};</code></mark></p><p id="15f2073e-5257-8088-aff7-c85172fb1f59" class="">有<mark class="highlight-yellow"><code>char ch[6] = {&#x27;h&#x27;, &#x27;e&#x27;, &#x27;l&#x27;, &#x27;l&#x27;, &#x27;o&#x27;, &#x27;\0&#x27;};</code></mark></p><p id="1622073e-5257-8067-8916-fb24cbf78594" class="">（<mark class="highlight-yellow"><code>&#x27;\0&#x27;</code></mark>不可省略）</p><p id="15f2073e-5257-80a7-b8b8-c072cded2660" class="">更简化的写法是<mark class="highlight-yellow"><code>char ch[6] = &quot;hello&quot;</code></mark>;</p><p id="15f2073e-5257-80a6-94e1-f221e776df2e" class="">
+</p></div></figure><p id="1622073e-5257-80c9-9131-e72c51edad21" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1622073e-5257-801c-a19b-e2f632c09a82"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="b3e623fc-8455-4f31-a93b-ff7f86729783" class="">字符数组与字符指针</p><p id="1622073e-5257-80d8-a894-e6ad64ce0b17" class=""><mark class="highlight-yellow"><code>char greeting[] = &quot;Hello World!&quot;;</code></mark></p><p id="1622073e-5257-80c5-be1c-e3bcb0886054" class=""><mark class="highlight-yellow"><code>char *greeting = &quot;Hello World!&quot;;</code></mark></p><p id="1622073e-5257-8081-9222-c781f12ebea9" class="">这两行代码分别声明了数组与指针，第一行代码中声明的数组可以被修改，而第二行代码中声明的指针指向字符串字面量，是不可修改的</p><p id="1622073e-5257-8065-8817-f5df95a647f5" class="">
+</p></div></figure><p id="1622073e-5257-800a-8739-d84accbed217" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1622073e-5257-80d9-9342-f0f06781c811"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="c2e0eb8f-0c65-4e8d-a0d1-3d68821a92cb" class="">读写字符串</p><ol type="1" id="1622073e-5257-805f-9a78-ec7f28fa519f" class="numbered-list" start="1"><li>用printf或puts函数写</li></ol><p id="1622073e-5257-8023-9d56-f500da3c7942" class="">使用%s转换说明符+printf函数：<mark class="highlight-yellow"><code>printf(&quot;%s&quot;,str);</code></mark></p><p id="1622073e-5257-807e-948f-fb9b34f65cfe" class="">使用puts函数：<mark class="highlight-yellow"><code>puts(str);</code></mark><mark class="highlight-yellow"> </mark>（puts函数会自动换行！）</p><p id="1622073e-5257-808b-9dec-eaad7ffe0952" class=""><mark class="highlight-yellow"><code>printf(&quot;%s\n&quot;,str);</code></mark>等价为<mark class="highlight-yellow"><code>puts(str);</code></mark></p><ol type="1" id="1622073e-5257-80bf-a489-d58471ad65e6" class="numbered-list" start="2"><li>用scanf或gets函数读</li></ol><p id="1622073e-5257-80c3-b345-e5556fb86e85" class="">使用%s转换说明符+scanf函数：<mark class="highlight-yellow"><code>scanf(&quot;%s&quot;,str);</code></mark></p><p id="1622073e-5257-80e1-af9c-d43f36455de2" class="">（不需要加取地址符&amp;，因为str退化成了指针来处理）</p><p id="1622073e-5257-80ee-af6b-d2d32c5467b3" class="">scanf在读取字符的时候始终跳过空白字符，只要遇到空白字符（空格，制表符，换行符），scanf立刻停止字符串的读入</p><p id="1622073e-5257-80a5-8ee9-f76ac5da5806" class="">此时使用gets函数效果更好</p><p id="1622073e-5257-8087-95a3-f5c6cf89976d" class="">gets函数不会跳过任何空白字符，只会因为遇到换行符停止读入</p><p id="1622073e-5257-80ae-8559-f71c448534d5" class="">gets函数不会读入结尾的换行符，而是用<mark class="highlight-yellow"><code>\0</code></mark>代替</p><p id="1622073e-5257-80eb-bc56-f1be034b8c65" class="">
+</p><p id="c3535b80-509f-4614-960d-9ce82227c42d" class="">注意：两个读入方法都不会主动避免数组越界的情况</p></div></figure><p id="1622073e-5257-80dc-9f7a-edcf9ea9f413" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1622073e-5257-80ce-b92d-d0e557c32329"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="4c397e14-11a3-4e22-8cf7-066f5d9e328f" class="">设计一个读入字符串的函数：</p><p id="1622073e-5257-8063-809d-fc73fd79769d" class="">（n为字符串的最大容量，函数返回值为实际读取的字符数）</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1622073e-5257-807d-931e-c475ec45f6cf" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int read_str(char* str, int n)
+{
+	int ch, i = 0;
+	while( (ch = getchar()) != &#x27;\n&#x27;)
+		if (i &lt; n)
+			*(str + i++) = ch;          // 先存值，再使索引i自增
+	*(str + i) = &#x27;\0&#x27;;              // 结尾加\0
+	return i;
+}</code></pre><p id="7eb6d595-7260-4c50-a556-d395357f353e" class="">设计一个访问字符串中字符的函数：</p><p id="1622073e-5257-8022-9682-d30bc4e82292" class="">（示例函数寻找特定字符在字符串中的数量）</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1622073e-5257-80b0-9535-d9600c2a5eab" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">int count(const char* str, char target)
+{
+	int count = 0;
+	for(int i = 0; *(str + i) != &#x27;\0&#x27;; i++)
+		if (*(str + i) == target)
+			count++;
+	return count;
+}
+
+// 上面的写法是偏向数组型操作的
+// 下面的一种写法，体现出了指针操作的简便性
+int count(const char* str, char target)
+{
+	int count = 0;
+	for(; *str != &#x27;\0&#x27;; str++)
+		if (*str == target)
+			count++;
+	return count;
+}</code></pre><p id="1622073e-5257-8060-b540-d6c6bb5acb3a" class="">处理字符串相比处理数组有一点方便之处在于：字符串以\0结尾，而数组没有特定的结束方式，所以处理数组的函数往往需要额外传递长度参数，而字符串处理函数不需要</p><p id="1622073e-5257-8071-be1f-f11da8e2273e" class="">另外，在形式参数声明时，str[]和*str没有任何区别</p></div></figure><p id="1622073e-5257-80b9-aa19-cb2666e3cc62" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1622073e-5257-805d-8802-e71b77033f26"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="82cb84cd-fd92-455b-b433-70c942954a60" class="">利用&lt;string.h&gt;中的函数高效处理字符串</p><p id="1652073e-5257-8015-8cef-e3096d624a72" class="">（此处不讨论<mark class="highlight-yellow"><code>memcpy</code></mark>之类的函数）</p><p id="1622073e-5257-805a-ae89-f5ba7ba89082" class="">
+</p><p id="1622073e-5257-8003-9dbc-eb42cd41b6a2" class=""><mark class="highlight-yellow"><code>char *</code></mark><mark class="highlight-teal"><code>strcpy</code></mark><mark class="highlight-yellow"><code>(char *s1, const char *s2)</code></mark>将s2复制给s1</p><p id="1622073e-5257-80e0-b025-c54518bbb589" class="">（把s2指向的字符串复制到s1指向的数组）</p><p id="1622073e-5257-80e5-9349-fe68cef70dcd" class="">strcpy函数有返回值s1而不是void，这样做有很大的好处：</p><p id="1622073e-5257-80c9-beb3-e23e650ea0b0" class="">这使得<mark class="highlight-yellow"><code>strcpy(str1, strcpy(str2, str3))</code></mark>这样的嵌套用法得以实现</p><p id="1622073e-5257-8019-91e0-dda65fffc2c2" class="">
+</p><p id="1622073e-5257-8056-b766-f95fd3f196e1" class=""><mark class="highlight-yellow"><code>size_t </code></mark><mark class="highlight-teal"><code>strlen</code></mark><mark class="highlight-yellow"><code>(const char *s)</code></mark> 获取字符串s的长度（不含<mark class="highlight-yellow"><code>\0</code></mark>）</p><p id="1622073e-5257-8094-bb6d-d1467d41df2c" class=""><a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">size_t的内容之前有提过</a></p><p id="1652073e-5257-80f8-a4e6-c7e5efc3440e" class="">
+</p><p id="1652073e-5257-80ad-af6b-cac31e8d674e" class=""><mark class="highlight-yellow"><code>char *</code></mark><mark class="highlight-teal"><code>strcat</code></mark><mark class="highlight-yellow"><code>(char *s1, const char *s2)</code></mark> 将s2追加到s1（返回值s1）</p><p id="1652073e-5257-805b-8cc6-c730fdc9b3cc" class="">（s2没有变化）</p><p id="1652073e-5257-8091-8c72-d1b91993f557" class="">
+</p><p id="1652073e-5257-80ad-96ff-fa4008b8549d" class="">strcpy与strcat，都有其安全版的变种：</p><p id="1652073e-5257-808f-b331-dde2dfa7982e" class=""><mark class="highlight-yellow"><code>char *strncpy(char *s1, const char *s2, size_t n);</code></mark></p><p id="1652073e-5257-80f5-ab39-f4ffd7aa1007" class=""><mark class="highlight-yellow"><code>char *strncat(char *s1, const char *s2, size_t n);</code></mark></p><p id="1652073e-5257-80d9-8a55-cf57898d926d" class="">多余的n参数用于限定复制的字符数</p><p id="1652073e-5257-80d3-8923-f6289a06eeea" class="">
+</p><p id="1622073e-5257-80ca-96ee-d2f03d49f9bf" class=""><mark class="highlight-yellow"><code>int strcmp(const char *s1, const char *s2)</code></mark><mark class="highlight-yellow"> </mark>字符串比较</p><p id="1652073e-5257-800f-8253-c16dd5912716" class="">返回值int的计算原理是：</p><p id="1652073e-5257-8061-8bcf-f48fac08894a" class=""><em>两个字符串从第一个元素开始比较，如果第一次出现</em><em><mark class="highlight-yellow"><code>s1[i] != s2[i]</code></mark></em><em>，则返回</em><em><mark class="highlight-yellow"><code>s1[i] - s2[i]</code></mark></em><em>（ASCII码的值）</em></p><p id="1652073e-5257-803d-8ac6-cb7a0bf05240" class=""><em>如果两个字符串不等长且等长部分完全相同，也返回</em><em><mark class="highlight-yellow"><code>s1[i] - s2[i]</code></mark></em><em><mark class="highlight-yellow"> </mark></em><em>（</em><em><mark class="highlight-yellow"><code>s1[i]</code></mark></em><em>或</em><em><mark class="highlight-yellow"><code>s2[i]</code></mark></em><em>为</em><em><mark class="highlight-yellow"><code>&#x27;\0&#x27;</code></mark></em><em>）</em></p><p id="1652073e-5257-80af-9fb4-d19f432fdd59" class="">（斜体部分可能视具体的编译器有所不同）</p><p id="1652073e-5257-8056-a936-cf97a76d8b9f" class="">如果两个字符串完全相同，返回0</p><p id="1652073e-5257-8035-9773-fc9d512c00c3" class="">
+</p><p id="1652073e-5257-80ef-a457-cc8d52baaf8d" class="">更常用的，当遇到不同字符时：</p><p id="1652073e-5257-80bb-8ffc-d5a2d1aa086b" class="">ASCII值：<strong>控制字符 &lt; 空格 &lt; 数字 &lt; 大写字母 &lt; 小写字母</strong></p><p id="1652073e-5257-80cb-ad65-de0cbb3313b4" class="">两个字符串不等长且等长部分完全相同：<strong>长字符串 &gt; 短字符串 </strong></p></div></figure><p id="1652073e-5257-8022-8176-dfcdd7b6cd33" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-807c-a26d-d9982c7cf95b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="7b26e80b-570a-43e4-aa77-bad0b033fe08" class="">strlen函数实现</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1652073e-5257-8056-bcd4-eb7161ccbd60" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Classical
+size_t strlen(const char *s)
+{
+	for (size_t n = 0; *s != &#x27;\0&#x27;; s++)
+		n++;
+	return n;
+}
+
+
+// 考虑到&#x27;\0&#x27;的ASCII值就是0，也就是false
+// *s != &#x27;\0&#x27; 和 *s 条件是等价的
+size_t strlen(const char *s)
+{
+	for (size_t n = 0; *s; s++)
+		n++;
+	return n;
+}
+
+
+// for语句的判断*s与之后的s++可以糅合为*s++
+// 考虑使用while语句精简
+size_t strlen(const char *s)
+{
+	size_t n = 0;
+	while(*s++)
+		n++;
+	return n;
+}
+
+
+// tip: 
+// while (*s) s++; 与while (*s++);不一样
+// 后者相比前者，s指向的位置靠后一位
+// while (*s) s++; 与while (*s++); s--;是一样的</code></pre></div></figure><p id="1652073e-5257-801e-9eb6-df47d09d67a8" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-801e-983f-eb03eae0d642"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="be1f2e37-4db7-460b-82da-00b05a40e06d" class="">strcat函数实现</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1652073e-5257-8059-a132-f73feff15775" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">char *strcat(char *s1, const char *s2)
+{
+	char *p = s1;
+	
+	// 找到s1的末端
+	while(*p)          // *p != &#x27;\0&#x27;
+		p++;
+		
+	// 逐个元素替换
+	while(*p++ = *s2++);
+	
+	// 使字符串正确终止
+	*p = &#x27;\0&#x27;;
+	
+	return s1;
+}</code></pre><p id="1652073e-5257-8067-9405-f6d3fc4563a8" class="">对于<mark class="highlight-yellow"><code>while(*p++ = *s2++);</code></mark>，其等价为：</p><p id="1652073e-5257-8080-9d2d-d2e73755dc57" class="">（上面的这种赋值写法编译器可能会给出警告）</p><p id="1652073e-5257-80db-88bb-f83c79d1e4c2" class="">（对于gcc编译器，可以多套一对括号以消除警告——）</p><p id="1652073e-5257-8075-a1a6-c3d9f44c5284" class="">（<mark class="highlight-yellow"><code>while((*p++ = *s2++));</code></mark>）</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1652073e-5257-80e8-8219-d5a996e81b09" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">while(*s2 != &#x27;\0&#x27;)
+{
+	*p = *s2;
+	p++;
+	s2++;
+}</code></pre></div></figure><p id="1652073e-5257-8033-b3fa-fa3c1ace01fb" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-80dd-b311-c8d6f61152a1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="99b9e18b-2261-4284-a6bd-246653acd574" class="">建立参差不齐的数组</p><p id="1652073e-5257-808b-925b-ce3322e2672e" class=""><mark class="highlight-yellow"><code>char fruits[][11] = {&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;};</code></mark><mark class="highlight-yellow"> </mark></p><p id="1652073e-5257-808e-a8a2-eb39b1ce381a" class=""><mark class="highlight-yellow"><code>char *fruits[] = {&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;};</code></mark></p><p id="1652073e-5257-80b0-9953-de10581d2937" class="">前者生成的是“一大块的字符串”</p><p id="1652073e-5257-80bd-bbcd-cbd6adaba122" class="">后者生成的是“一串串的字符串”</p><p id="1652073e-5257-80ca-8bc7-c8415355bc1a" class="">前者fruits是一个二维数组，行列都指定</p><p id="1652073e-5257-80a9-9660-e441ffa4d713" class="">后者fruits是一个存储了 <em>指向一维数组的指针 </em>的数组，每个一维数组的大小由初始化时决定（或者动态分配）</p><p id="1652073e-5257-8092-81e9-da04dc4016d9" class="">
+</p></div></figure><p id="1652073e-5257-8069-b52d-f809facf8950" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-8040-a60d-e450bd0c7696"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1652073e-5257-8010-8dce-cefce5d4a7d1" class="">关于上一点的一些问题</p><p id="1652073e-5257-80ef-bf7f-dcb824d2c932" class="">
+</p><p id="9bed0ee5-6644-4a46-b844-9fa0f791d399" class="">为什么<mark class="highlight-yellow"><mark class="highlight-red_background"><code>char (*fruits)[11] = {&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;};</code></mark></mark><mark class="highlight-default"><mark class="highlight-default_background">是错误的？</mark></mark></p><p id="1652073e-5257-80ac-9c58-f2fcad4209b7" class=""><mark class="highlight-yellow"><mark class="highlight-default_background"><code>char (*fruits)[11]</code></mark></mark><mark class="highlight-yellow"><mark class="highlight-default_background"> </mark></mark><mark class="highlight-default">表示声明了一个指针，指向</mark><mark class="highlight-yellow"><code>char[11]</code></mark><mark class="highlight-default">类型的元素，而</mark><mark class="highlight-yellow"><mark class="highlight-default_background"><code>{&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;}</code></mark></mark><mark class="highlight-default"><mark class="highlight-default_background">是三个字符串的组合，也就是</mark></mark><mark class="highlight-yellow"><mark class="highlight-default_background"><code>char*[]</code></mark></mark><mark class="highlight-default_background">，两者类型不匹配</mark></p><p id="1652073e-5257-8058-8220-f8a069325646" class=""><br/>而<mark class="highlight-yellow"><code>char *fruits[]</code></mark>表示声明了一个数组（数组长度在初始化时决定），数组的元素类型是char*（字符串），这与<mark class="highlight-yellow"><mark class="highlight-default_background"><code>{&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;}</code></mark></mark><mark class="highlight-default_background">是匹配的</mark><br/></p><p id="1652073e-5257-80f1-9b40-eae7d8962993" class=""><mark class="highlight-yellow"><mark class="highlight-red_background"><code>char **fruits = {&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;};</code></mark></mark><mark class="highlight-default_background">也是错误的2aqz</mark></p><p id="1652073e-5257-80b9-8ee4-db5efef463c3" class="">**fruit本身不会存储字符串（连内存空间都没分配）</p><p id="1652073e-5257-8083-9603-ddffd06dca67" class="">正确的做法是：（省略了fruits是否为NULL的检查部分）</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1652073e-5257-8049-a723-f9fd20d49702" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// 1. 先动态分配指针数组内存，再使用strdup为每个字符串分配内存并初始化
+char **fruits = (char **)malloc(3 * sizeof(char *));
+    fruits[0] = strdup(&quot;Apple&quot;);
+    fruits[1] = strdup(&quot;Banana&quot;);
+    fruits[2] = strdup(&quot;Strawberry&quot;);
+    
+// 2. 指向已存在的字符串指针数组
+char *varieties[] = {&quot;Apple&quot;, &quot;Banana&quot;, &quot;Strawberry&quot;};
+char **fruits = varieties;</code></pre><p id="1652073e-5257-8090-b17e-dd5487d19350" class=""><strong>总结：</strong></p><p id="1652073e-5257-80fa-bab1-f23d835c67c2" class=""><mark class="highlight-yellow"><code><strong>char *q[]</strong></code></mark><strong>与</strong><mark class="highlight-yellow"><code><strong>char q[][]</strong></code></mark><strong>都可以直接采用字符串字面量初始化，它们的本质都是数组（在栈上分配了相应的内存）；</strong><mark class="highlight-yellow"><code><strong>char **p</strong></code></mark><strong>和</strong><mark class="highlight-yellow"><code><strong>char (*p)[]</strong></code></mark><strong>都不可以直接采用字符串字面量初始化，它们的本质都是指针（没有分配任何内存）</strong></p><p id="1652073e-5257-80bb-8497-ccc13caed839" class=""><mark class="highlight-yellow"><code><strong>char **p</strong></code></mark><strong>作为指针指向的是</strong><mark class="highlight-yellow"><code><strong>char *q[]</strong></code></mark><strong>而不是</strong><mark class="highlight-yellow"><code><strong>char q[][]</strong></code></mark></p><p id="1652073e-5257-806f-9e7f-d8fc86e3e267" class=""><mark class="highlight-yellow"><code><strong>char (*p)[]</strong></code></mark><strong>作为指针指向的是</strong><mark class="highlight-yellow"><code><strong>char q[][]</strong></code></mark><strong>而不是</strong><mark class="highlight-yellow"><code><strong>char *q[]</strong></code></mark></p><p id="1662073e-5257-8059-84f1-e3be0622d72c" class="">
+</p><p id="1652073e-5257-803b-8736-f5ca03270249" class="">关于如何解释这样复杂的声明，<a href="https://www.notion.so/14f2073e525780d0bcccfd1dfd8d1778?pvs=21">详见此</a></p><p id="1652073e-5257-80e5-b703-fd32a5375c4c" class="">
+</p></div></figure><p id="1652073e-5257-8041-85bb-e13aab8fde5b" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-80ba-b7c0-f29d507899ba"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="43cac86e-752d-4fd5-861c-fdedde4f567e" class=""><mark class="highlight-yellow"><code>int main()</code></mark>可以有传入参数：</p><p id="1652073e-5257-8065-b5e0-ff92f7005b9e" class=""><mark class="highlight-yellow"><code>int main(int argc, char *argv[])</code></mark>可以让C程序访问命令行参数</p><p id="1652073e-5257-80de-aab9-e70ea4a50535" class="">argc（argument count）表示命令行参数的数量</p><p id="1652073e-5257-801c-88be-e31a6f43fd19" class="">argv（argument vector）是一个字符指针数组：<div class="indented"><p id="1652073e-5257-80b5-8335-c80f30cdae40" class="">argv[0]一定是程序名</p><p id="1652073e-5257-800e-a808-e58a034f3be1" class="">argv[1]~…依次表示命令行参数</p><p id="1652073e-5257-804e-9157-efb9f091fc3f" class="">argv[argc]一定是NULL指针（作为遍历argv结束的条件）</p></div></p></div></figure><p id="1652073e-5257-80ab-8846-ea14c3c06b07" class="">
+</p><div id="65941122-9608-4d0d-852c-0f20054a0707" class="column-list"><div id="74356909-90aa-46b7-a2bd-a89276f144f4" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-80d2-8fa2-f10d0226c514"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="9041c43b-5547-474c-ac65-3619299b85a7" class="">printf()的函数声明是：<mark class="highlight-yellow"><code>int printf(const char *format, ...)</code></mark></p><p id="1652073e-5257-808e-89de-c95052a44d54" class="">除了常用的使用字符串字面量作为实际参数，也可以使用字符串变量</p><p id="1652073e-5257-8048-9ed0-e677f4d6aed3" class="">比如：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1652073e-5257-8053-96f7-f75d4064031f" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">char str[] = &quot;e = %.9f...&quot;;
+double e = 2.718281828;
+printf(str,e);
+
+// 输出结果是：e = 2.718281828...</code></pre><p id="1652073e-5257-8008-8ac4-d88628755dfb" class="">需要注意的是，printf会把%作为转换说明的开始，所以除非必要，不要传入带%的字符串</p></div></figure><p id="1692073e-5257-808d-bce8-cbb0bb7f251d" class="">
+</p></div><div id="2981a124-93bd-4adf-b476-34d8785a6fce" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1652073e-5257-8090-9797-f3b2a1e96d85"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="1652073e-5257-80dc-9082-d4cc116beb12" class="">三种打印函数的函数声明</p><p id="1652073e-5257-8047-b7e5-caedc8f4003c" class=""><mark class="highlight-teal"><code>int printf(const char *format, ...);</code></mark></p><p id="1652073e-5257-8071-b655-dfca34af82d5" class=""><mark class="highlight-teal"><code>int putchar(int c);</code></mark></p><p id="1652073e-5257-80ec-a2a6-ec9ff6157632" class=""><mark class="highlight-teal"><code>int puts(const char *str);</code></mark></p><p id="1652073e-5257-802b-b8da-c120df72c23d" class="">
+</p><p id="2dd6cd87-282b-4a93-b22c-7ff8a21789e7" class=""><mark class="highlight-teal">正确</mark>/<mark class="highlight-red">错误</mark>输出“一个换行符”的方式：</p><p id="1652073e-5257-8028-920e-e70f80f4797e" class=""><mark class="highlight-teal"><code>printf(&quot;%c&quot;, &#x27;\n&#x27;);</code></mark><mark class="highlight-teal"> （没有问题）</mark></p><p id="1652073e-5257-80a0-ba9f-c1ef3a245b39" class=""><mark class="highlight-red"><code>printf(&quot;%c&quot;, &quot;\n&quot;);</code></mark><mark class="highlight-red"> （类型不匹配）</mark></p><p id="1652073e-5257-80cd-8c43-df2464fa64fe" class=""><mark class="highlight-red"><code>printf(&quot;%s&quot;, &#x27;\n&#x27;);</code></mark><mark class="highlight-red"> （程序直接崩了）</mark></p><p id="1652073e-5257-80bf-a867-c40de799b996" class=""><mark class="highlight-teal"><code>printf(&quot;%s&quot;, &quot;\n&quot;);</code></mark><mark class="highlight-teal"> （没有问题）</mark></p><p id="1652073e-5257-8074-becd-e01a4bcc44d6" class=""><mark class="highlight-teal"><code>printf(&quot;\n&quot;);</code></mark><mark class="highlight-teal"> （没有问题）</mark></p><p id="1652073e-5257-8030-a4fe-c6a0c7212536" class=""><mark class="highlight-red"><code>printf(&#x27;\n&#x27;);</code></mark><mark class="highlight-red"> （printf首先需要一个格式化字符串作为输入，而非字符）</mark></p><p id="1652073e-5257-8065-ba18-c379cbf99825" class="">
+</p><p id="1652073e-5257-8083-8404-d8db23f63aa8" class=""><mark class="highlight-teal"><mark class="highlight-default_background"><code>putchar(&#x27;\n&#x27;);</code></mark></mark><mark class="highlight-teal"><mark class="highlight-default_background"> （没有问题）</mark></mark></p><p id="1652073e-5257-8059-b407-e08ef293f1a0" class=""><mark class="highlight-red"><mark class="highlight-default_background"><code>putchar(&quot;\n&quot;);</code></mark></mark><mark class="highlight-red"><mark class="highlight-default_background"> （putchar期望获取char而不是char*）</mark></mark></p><p id="1652073e-5257-80e5-b08e-fcaf685b6847" class="">
+</p><p id="1652073e-5257-80a8-bb65-d67f091fd389" class=""><mark class="highlight-red"><code>puts(&#x27;\n&#x27;);</code></mark><mark class="highlight-red"> （puts期望获取char*而不是char）</mark></p><p id="1652073e-5257-8049-899d-cfc2f1c6b04a" class=""><mark class="highlight-red"><code>puts(&quot;\n&quot;);</code></mark><mark class="highlight-red"> （puts会在输出字符串后自动添加一个\n，所以实际上输出了两个换行符）</mark></p><p id="1652073e-5257-8003-af57-f7fed3856ead" class=""><mark class="highlight-teal"><code>puts(&quot;&quot;);</code></mark><mark class="highlight-teal"> （puts会在输出字符串后自动添加一个\n，所以是正确的）</mark></p><p id="1652073e-5257-80ae-b24b-ce6c47c0354d" class="">
+</p></div></figure></div></div><p id="1682073e-5257-80fa-9867-f51de4f4e61e" class="">
+</p><p id="6eee13c9-3bac-41d9-8e6a-4217366bf9a7" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1682073e-5257-80ca-a084-cc530131ad62"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="fb78d7e7-5c0c-4236-808f-5e19b7e74948" class="">结构变量由多个成员组成，成员可以具有不同的类型：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1692073e-5257-8069-9730-f7fe788502c9" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">// Example
+struct info {
+	int number;
+	char name[NAME_LEN + 1];
+	int on_hand;
+} part1, part2 = {20, &quot;Drive&quot;, 10}; </code></pre><p id="1692073e-5257-80f4-bebc-c1bc89f85e4e" class="">上述代码声明了一个非匿名结构体info，包含多个成员，同时声明了part1与part2作为该种类型的变量，并为part2进行了初始化</p><p id="1692073e-5257-8006-acb7-e4ad0223fdc6" class="">实际上为结构体命名（结构标记）是非必须的，但往往是有用的，创建标记的结构体可以用来声明变量：<mark class="highlight-yellow"><code>struct info part3;</code></mark></p><p id="1692073e-5257-8006-85cc-f53da3d62871" class="">如果不标记结构体（匿名），则只能在创建结构体时声明变量</p><p id="16a2073e-5257-804e-bc16-c1948cd2402f" class="">
+</p><p id="1692073e-5257-8086-ad33-c23ea6eb15af" class="">另一种为结构体“命名”的方式是使用typedef</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1692073e-5257-80c7-915e-dc22eb06e073" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">typedef struct info {
+	int number;
+	char name[NAME_LEN + 1];
+	int on_hand;
+} INFO Info info
+
+// 上述代码给整个结构进行了类型名定义
+// INFO part1; 与 struct info part1; 都是有效声明
+// 代码中INFO, Info, info都是结构体的别名</code></pre><p id="16a2073e-5257-809e-aeb6-c3dae4d14ce7" class="">
+</p><p id="1692073e-5257-80b0-8ba8-d44cf0d1a3ff" class="">part1与part2不必在结构体声明时进行声明，见part3</p><p id="1692073e-5257-8067-88ea-e0b20301ff89" class="">结构体变量各成员未初始化的内容默认为0（字符串\0）</p><p id="1692073e-5257-80d0-bde8-f70f2aaa9927" class="">成员可以部分初始化，可以不初始化</p><p id="1692073e-5257-80f4-a88c-d40fcc97129c" class="">C99+有“指定初始化”，比如：</p><p id="1692073e-5257-8071-a5d6-eea529b16991" class=""><mark class="highlight-yellow"><code>struct info part4 = {.name = &quot;Screen&quot;, .number = 114};</code></mark></p><p id="1692073e-5257-80a8-b7fd-cb29a6d929f0" class="">用<mark class="highlight-yellow"><code>.＋成员名称 = 内容</code></mark><mark class="highlight-yellow"> </mark>表示对某一部分指定初始化，不用考虑成员声明顺序</p><p id="1692073e-5257-8025-b7d2-fbde36436ad3" class="">在上面的例子中<mark class="highlight-yellow"><code>.number</code></mark>可以删去，因为编译器默认<mark class="highlight-yellow"><code>114</code></mark>是对<mark class="highlight-yellow"><code>name</code></mark>之后成员的赋值（<mark class="highlight-yellow"><code>114</code></mark>的前面是对<mark class="highlight-yellow"><code>name</code></mark>的赋值）</p><p id="1692073e-5257-807b-a850-eaef6f316ff8" class="">
+</p><p id="1692073e-5257-8027-bc77-de4f475c9e0f" class="">操作结构体</p><p id="1692073e-5257-80d7-bec2-cf85d4dbee96" class="">对于上面的结构体，可以用<mark class="highlight-yellow"><code>变量名.成员名</code></mark>访问</p><p id="1692073e-5257-80ec-83cf-e6eeabe64384" class="">比如：<mark class="highlight-yellow"><code>part1.number += part2.on_hand;</code></mark></p><p id="1692073e-5257-8036-ad8c-e10ac1620a80" class="">上述代码涉及了句点运算符<mark class="highlight-yellow"><code>&quot;.&quot;</code></mark><mark class="highlight-yellow"> </mark>，其优先级和后缀自增/自减相同</p><p id="1692073e-5257-8088-a780-e4a0735d49cb" class="">结构成员是左值</p><p id="1692073e-5257-804f-a736-c13c11de0426" class="">对于类型兼容的两个变量（比如part1与part2，两者都是由info结构体定义的），可以直接使用赋值号进行赋值（<mark class="highlight-yellow"><code>part1 = part2;</code></mark>是可行的，<strong>即使成员中可能有数组</strong>）</p><p id="16a2073e-5257-80bb-b02c-feafb164415b" class="">但是下面的part1与part2是类型不兼容的：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="16a2073e-5257-807e-999a-d39681dbfcf2" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">struct {
+	int number;
+	char name[NAME_LEN + 1];
+	int on_hand;
+} part1 = {20, &quot;Drive&quot;, 10};
+
+struct {
+	int number;
+	char name[NAME_LEN + 1];
+	int on_hand;
+} part2 = {10, &quot;Dive&quot;, 20}, part3;
+
+part1 = part2; // INCORRECT
+part3 = part2; // CORRECT</code></pre><p id="1692073e-5257-80d1-a105-c779a3faf97e" class="">结构体没有<mark class="highlight-yellow"><code>==</code></mark>；<mark class="highlight-yellow"><code>!=</code></mark>等比较方式</p></div></figure><p id="16a2073e-5257-8014-94c8-d2df0cb423ef" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16a2073e-5257-8061-b45d-f89a0e95e750"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="8de89768-6530-4c2b-823b-8f4e90515a7d" class="">结构体有很多作用，包括但不限于：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="16a2073e-5257-8088-92ec-f459286ed90b" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">/* 数组整体复制 */
+struct array {
+	int a[10];
+} Template = {{1,2,3,4,5,6,7,8,9,10}};    // 注意双{}
+
+struct array arr;
+arr = Template;
+
+for (int i = 0; i &lt; 10 ;i++)
+	printf(&quot;%d &quot;,arr.a[i]);
+	
+	
+/* 函数返回多个值 */
+typedef struct {
+    int sum;
+    int product;
+} Result;
+// 返回a+b与a×b的值（通过结构体访问）
+Result calculate(int a, int b) {
+    Result r;
+    r.sum = a + b;
+    r.product = a * b;
+    return r;
+}
+
+</code></pre></div></figure><p id="16a2073e-5257-80f1-b92d-e8e45ab3ee8d" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16a2073e-5257-80a0-aeb2-ce76daae3f8c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="c50c2661-373b-4ea0-a30d-2fa23aa3f889" class="">结构体允许嵌套（但不要嵌套定义）</p><p id="16a2073e-5257-8015-bcdb-cdca35bc4ee7" class="">结构体允许与数组结合</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="16a2073e-5257-80f4-ae49-d8c8e99f6df0" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">struct clothes {
+    float prize;
+    char color;
+    int size;
+};
+
+struct cups {
+    float prize;
+    char color;
+    char style[10];
+};
+
+struct goods {
+    int varieties;
+    struct clothes clothes;
+    struct cups cups;
+} ;
+
+struct goods Rack[3];      // 结构体数组
+Rack[0].cups.prize = 20;   // 访问赋值
+</code></pre></div></figure><p id="16a2073e-5257-8083-a772-c6761f3ef582" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16a2073e-5257-807a-84e2-e7534d485d72"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="ecd6550c-7fe3-425a-9fc3-18dce0f0dd6b" class="">联合union和结构体struct很像（声明等内容），但在内存存储上区别很大：</p><p id="16a2073e-5257-80d9-810f-cee19968c07f" class="">struct各个成员的数据无间隔地存储在连续内存中，就和数组一样连续</p><p id="16a2073e-5257-80ab-90ef-f01da80e9858" class="">union将所有的成员重叠存储，也就是说，最后一次对某一成员的赋值会覆盖上一次的赋值（只能保存最新一次赋值的值）</p><p id="16a2073e-5257-8054-9298-cdab132f9e76" class="">应用1：</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="16a2073e-5257-8012-9552-d47ff25c8ef3" class="code code-wrap"><code class="language-C" style="white-space:pre-wrap;word-break:break-all">union { // 联合体
+        struct { // book 商品的结构体
+            char title[TITLE_LEN+1];   // 书名
+            char author[AUTHOR_LEN+1]; // 作者
+            int num_pages;            // 页数
+        } book;
+
+        struct { // mug 商品的结构体
+            char design[DESIGN_LEN+1]; // 杯子设计
+        } mug;
+
+        struct {  // shirt 商品的结构体
+            char design[DESIGN_LEN+1]; // 衬衫设计
+            int colors;             // 颜色数量
+            int sizes;              // 尺寸数量
+        } shirt;
+    } item; // 联合体变量名
+};</code></pre><p id="16a2073e-5257-80b0-b637-de600d8162da" class="">因为一个item只可能是book，mug，shirt的其中一种，所以此处使用联合节约内存</p></div></figure><p id="16a2073e-5257-8078-bb98-f0363384ea3e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
